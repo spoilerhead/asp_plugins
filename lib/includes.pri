@@ -3,7 +3,7 @@ TARGET =
 DEPENDPATH += .
 
 !mac {
-    INCLUDEPATH += . ../SDK/current/Plugin ../lib
+    INCLUDEPATH += . ../../SDK/current/Plugin ../lib
 }
 mac {
     INCLUDEPATH += . ../../Plugin ../lib ../newSDK
