@@ -1,0 +1,8 @@
+<!DOCTYPE PropertyScribe>
+<PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
+    <PluginFileData identifier="sph.FatToni" website="http://web.student.tuwien.ac.at/~e0326004/bibble/" windowsLibFile="" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/FatToni/libFatToniPlugin.so" author="Spoilerhead" minorVersion="5" bugfixVersion="0" name="FatToni" majorVersion="0" sdkVersion="8" dataVersion="1">
+        <StringList name="uiFiles">
+            <li>/home/spoilerhead/code/ASP_Plugins/FatToni/FatToniPlugin.ui</li>
+        </StringList>
+    </PluginFileData>
+</PropertyScribe>

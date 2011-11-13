@@ -1,0 +1,3 @@
+
+lupdate FatToniPlugin.pro
+lrelease FatToniPlugin.pro
