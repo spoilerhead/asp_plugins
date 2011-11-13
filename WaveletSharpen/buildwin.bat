@@ -1,0 +1,1 @@
+qmake.exe -o SharpenPlugin.vcproj -t vclib SharpenPlugin.pro

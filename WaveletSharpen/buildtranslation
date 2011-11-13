@@ -1,0 +1,3 @@
+
+lupdate SharpenPlugin.pro
+lrelease SharpenPlugin.pro
