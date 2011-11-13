@@ -1,0 +1,1 @@
+qmake.exe -o DenoisePlugin.vcproj -t vclib DenoisePlugin.pro

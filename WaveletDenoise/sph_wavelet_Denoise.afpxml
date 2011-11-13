@@ -1,0 +1,8 @@
+<!DOCTYPE PropertyScribe>
+<PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
+    <PluginFileData identifier="sph.waveletdenoise" website="http://web.student.tuwien.ac.at/~e0326004/bibble/" windowsLibFile="" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/WaveletDenoise/libDenoisePlugin.so.0.1.0" author="Spoilerhead" minorVersion="11" bugfixVersion="1" name="Wavelet Denoise" majorVersion="0" sdkVersion="8" dataVersion="1">
+        <StringList name="uiFiles">
+            <li>/home/spoilerhead/code/ASP_Plugins/WaveletDenoise/sph_wavelet_denoise.ui</li>
+        </StringList>
+    </PluginFileData>
+</PropertyScribe>
