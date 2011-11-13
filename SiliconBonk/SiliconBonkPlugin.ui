@@ -1,0 +1,1331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SiliconBonkForm_bis</class>
+ <widget class="SettingsWidget" name="SiliconBonkForm_bis">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>292</width>
+    <height>154</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Silicon Bonk</string>
+  </property>
+  <property name="BIBBLE_PLUGIN_NAME" stdset="0">
+   <string notr="true">SiliconBonk</string>
+  </property>
+  <property name="BIBBLE_PLUGIN_GROUP" stdset="0">
+   <string notr="true">SiliconBonk</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="leftMargin">
+      <number>3</number>
+     </property>
+     <property name="topMargin">
+      <number>2</number>
+     </property>
+     <property name="rightMargin">
+      <number>3</number>
+     </property>
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QCheckBox" name="SiliconBonkOn_checkbox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>90</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Enable Gelatin Plugin</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>Enable</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="SiliconBonkReset_btn">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>20</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string extracomment="reset button tool tip">Reset plugin to default values</string>
+       </property>
+       <property name="text">
+        <string>Reset</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="SiliconBonkHighlights_checkbox">
+       <property name="text">
+        <string>Protect Highlights</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>130</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="elideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>true</bool>
+     </property>
+     <property name="documentMode">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="BonkTab">
+      <attribute name="title">
+       <string extracomment="Tab Title, keep the order please">Options</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <property name="horizontalSpacing">
+        <number>4</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="SiliconBonkH_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Hue</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="SiliconBonkL_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Luminance</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QSlider" name="SiliconBonkH_slider">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="maximum">
+          <number>360</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,0,168,168-0.2:H,72,168,168-0.4:H,144,168,168-0.6:H,206,168,168-0.8:H,288,168,168-1:H,0,168,168</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QSlider" name="SiliconBonkL_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="SiliconBonkH_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximum">
+          <number>360</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QSpinBox" name="SiliconBonkL_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="singleStep">
+          <number>1</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="SiliconBonkContrast_lbl">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Contrast</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QSlider" name="SiliconBonkContrast_slider">
+         <property name="minimum">
+          <number>-50</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string>0.029:H,0,0,127-0.047:H,0,0,120-0.11:H,0,0,120-0.128:H,0,0,135-0.191:H,0,0,135-0.209:H,0,0,112-0.272:H,0,0,112-0.29:H,0,0,143-0.353:H,0,0,143-0.371:H,0,0,104-0.434:H,0,0,104-0.452:H,0,0,151-0.515:H,0,0,151-0.533:H,0,0,96-0.596:H,0,0,96-0.614:H,0,0,159-0.614:H,0,0,159-0.677:H,0,0,159-0.695:H,0,0,88-0.758:H,0,0,88-0.776:H,0,0,167-0.839:H,0,0,167-0.857:H,0,0,80-0.92:H,0,0,80-0.938:H,0,0,175-1:H,0,0,175</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QSpinBox" name="SiliconBonkContrast_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-50</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="SiliconBonkMid_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Mid</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QSpinBox" name="SiliconBonkMid_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QSlider" name="SiliconBonkMid_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QSpinBox" name="SiliconBonkSat_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximum">
+          <number>200</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="SiliconBonkSat_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Saturation</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QSlider" name="SiliconBonkSat_slider">
+         <property name="maximum">
+          <number>200</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string>0:H,0,20,150-0.025:H,15,25,155-0.05:H,30,30,155-0.075:H,55,35,150-0.1:H,80,40,150-0.125:H,105,45,155-0.15:H,130,50,155-0.175:H,155,55,150-0.2:H,180,60,150-0.225:H,205,65,155-0.25:H,230,70,155-0.275:H,245,75,150-0.3:H,4,80,150-0.325:H,19,85,155-0.35:H,34,90,155-0.375:H,59,95,150-0.4:H,84,100,150-0.425:H,109,105,155-0.45:H,134,110,155-0.45:H,134,110,155-0.475:H,159,115,150-0.5:H,184,120,150-0.525:H,209,125,155-0.55:H,224,130,155-0.575:H,239,135,150-0.6:H,254,140,150-0.625:H,13,145,155-0.65:H,38,150,155-0.675:H,63,155,150-0.7:H,88,160,150-0.725:H,113,165,155-0.75:H,138,170,155-0.775:H,163,175,150-0.8:H,188,180,150-0.825:H,203,185,155-0.85:H,218,190,155-0.875:H,233,195,150-0.9:H,248,200,150-0.925:H,17,205,155-0.950000000000001:H,42,210,155-0.975000000000001:H,67,215,150-1:H,92,220,150</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="eqTab">
+      <attribute name="title">
+       <string>Equalizer</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="horizontalSpacing">
+        <number>4</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>0</number>
+       </property>
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <item row="0" column="1">
+        <widget class="QSlider" name="SiliconBonkC0L_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,0,192,64-0.5:H,0,192,192-1:H,0,64,255</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QSlider" name="SiliconBonkC1L_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,60,192,64-0.5:H,60,192,192-1:H,60,64,255</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QSlider" name="SiliconBonkC2L_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,120,192,64-0.5:H,120,192,192-1:H,120,64,255</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QSlider" name="SiliconBonkC3L_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,180,192,64-0.5:H,180,192,192-1:H,180,64,255</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSlider" name="SiliconBonkC4L_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,240,192,64-0.5:H,240,192,192-1:H,240,64,255</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QSlider" name="SiliconBonkC5L_slider">
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="Groove" stdset="0">
+          <string notr="true">0:H,300,192,64-0.5:H,300,192,192-1:H,300,64,255</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QSpinBox" name="SiliconBonkC0L_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QSpinBox" name="SiliconBonkC1L_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QSpinBox" name="SiliconBonkC2L_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QSpinBox" name="SiliconBonkC3L_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="2">
+        <widget class="QSpinBox" name="SiliconBonkC4L_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QSpinBox" name="SiliconBonkC5L_edit">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>56</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="minimum">
+          <number>-100</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="SiliconBonkC0L_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Red</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="SiliconBonkC1L_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Yellow</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="SiliconBonkC2L_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Green</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="SiliconBonkC3L_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Cyan</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="SiliconBonkC4L_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Blue</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="SiliconBonkC5L_lbl">
+         <property name="minimumSize">
+          <size>
+           <width>60</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Magenta</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="AboutTab">
+      <attribute name="title">
+       <string>About...</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <property name="margin">
+        <number>2</number>
+       </property>
+       <property name="spacing">
+        <number>4</number>
+       </property>
+       <item row="1" column="0">
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>180</height>
+          </size>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;(C) 2011 Spoilerhead&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;This plugin comes without waranty, the author is not responsible for damage or harm done in any way.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;Use at your own risk!&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&amp;quot;'Sans'&amp;quot;; font-size:medium;&quot;&gt;This plugin is based on an idea by &lt;/span&gt;&lt;a href=&quot;http://www.grubernd.at&quot;&gt;&lt;span style=&quot; font-size:medium; text-decoration: underline; color:#0000ff;&quot;&gt;Bernd Gruber.&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-family:&amp;quot;'Sans'&amp;quot;; font-size:medium;&quot;&gt; After endless nagging and bugging me I finally made it happen. The name is his fault, too :)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;This plugin is free, but i would appreciate it if you'd give me some support by &lt;/span&gt;&lt;a href=&quot;http://web.student.tuwien.ac.at/~e0326004/bibble/&quot;&gt;&lt;span style=&quot; font-family:'Sans'; text-decoration: underline; color:#0000ff;&quot;&gt;giving me a little donation, so i can buy myself beer, pizza and most important: coffee&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;This Plugin is currently not open source.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string notr="true" extracomment="version info">Silicon Bonk - T5 by Spoilerhead</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SettingsWidget</class>
+   <extends>QWidget</extends>
+   <header>SettingsWidget.h</header>
+   <container>1</container>
+   <slots>
+    <slot>setOption(int)</slot>
+    <slot>setOption(QString)</slot>
+    <slot>setOption(bool)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>textBrowser</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SiliconBonkOn_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkH_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkL_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkH_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkL_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>70</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkContrast_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkContrast_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkMid_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>107</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkMid_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>106</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>57</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkSat_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkSat_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkHighlights_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>92</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>71</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC0L_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>54</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC1L_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>71</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC2L_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC3L_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC4L_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC5L_slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>188</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC0L_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC1L_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC2L_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC3L_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC4L_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SiliconBonkC5L_edit</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>SiliconBonkForm_bis</receiver>
+   <slot>setOption(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>138</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>188</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

@@ -1,0 +1,3 @@
+
+lupdate SiliconBonkPlugin.pro
+lrelease SiliconBonkPlugin.pro
