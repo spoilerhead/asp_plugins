@@ -1,0 +1,3 @@
+
+lupdate GelatinPlugin.pro
+lrelease GelatinPlugin.pro

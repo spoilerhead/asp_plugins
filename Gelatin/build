@@ -1,0 +1,3 @@
+../lib/buildLinux.sh
+cp libGelatinPlugin.so '/home/spoilerhead/.AfterShotPro/Plugins/Gelatin.afplugin/lib'
+cp GelatinPlugin.ui '/home/spoilerhead/.AfterShotPro/Plugins/Gelatin.afplugin/ui'
