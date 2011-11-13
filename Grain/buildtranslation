@@ -1,0 +1,3 @@
+buildtranslation
+lupdate GrainPlugin.pro
+lrelease GrainPlugin.pro
