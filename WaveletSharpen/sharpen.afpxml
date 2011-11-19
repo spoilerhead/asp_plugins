@@ -1,12 +1,12 @@
 <!DOCTYPE PropertyScribe>
 <PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
-    <PluginFileData identifier="sph.waveletsharpen" website="http://web.student.tuwien.ac.at/~e0326004/bibble/" windowsLibFile="" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/WaveletSharpen/libSharpenPlugin.so.0.1.0" author="Spoilerhead" minorVersion="27" bugfixVersion="0" name="Wavelet Sharpen3" majorVersion="1" sdkVersion="8" dataVersion="1">
+    <PluginFileData identifier="sph.waveletsharpen" website="http://web.student.tuwien.ac.at/~e0326004/bibble/" windowsLibFile="/home/spoilerhead/code/ASP_Plugins/repo/WaveletSharpen/release/SharpenPlugin0.dll" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/WaveletSharpen/libSharpenPlugin.so.0.1.0" author="Spoilerhead" minorVersion="27" bugfixVersion="0" name="Wavelet Sharpen3" majorVersion="1" sdkVersion="8" dataVersion="1">
         <StringList name="uiFiles">
-            <li>/home/spoilerhead/code/ASP_Plugins/WaveletSharpen/sph_wavelet_sharpen.ui</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/WaveletSharpen/sph_wavelet_sharpen.ui</li>
         </StringList>
         <StringList name="localeFiles">
-            <li>/home/spoilerhead/code/ASP_Plugins/WaveletSharpen/SharpenPlugin_de.qm</li>
-            <li>/home/spoilerhead/code/ASP_Plugins/WaveletSharpen/SharpenPlugin_fr.qm</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/WaveletSharpen/SharpenPlugin_de.qm</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/WaveletSharpen/SharpenPlugin_fr.qm</li>
         </StringList>
     </PluginFileData>
 </PropertyScribe>

@@ -3,7 +3,7 @@
 ######################################################################
 
 include(../lib/includes.pri)
-include(..lib/fastmath.pri)
+include(../lib/fastmathinclude.pri)
 VERSION = 0.1
 
 # Input
