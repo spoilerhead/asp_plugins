@@ -11,7 +11,7 @@
 class WaveletSharpenFilter : public sphLayerFilter
 {
 public:
-	WaveletSharpenFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2LAB,false){ } ;
+	WaveletSharpenFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2LAB,GAMMA_NONE){ } ;
 	//virtual ~SharpenFilter() { ; }
 
 	enum OptionNames { Enable = 1, Amount = 2, Radius = 3, /*Blend = 4,*/ DePepper = 5, Edges=6, Clarity=7,

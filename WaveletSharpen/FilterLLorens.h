@@ -11,7 +11,7 @@
 class LLorensFilter : public sphLayerFilter
 {
 public:
-	LLorensFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2HCL,true){ } ;
+	LLorensFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2HCL,GAMMA_ALL){ } ;
 	//virtual ~SharpenFilter() { ; }
 
 	enum OptionNames {

@@ -11,7 +11,7 @@
 class USMFilter : public sphLayerFilter
 {
 public:
-	USMFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2LAB,false){ } ;
+	USMFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2LAB,GAMMA_NONE){ } ;
 	//virtual ~SharpenFilter() { ; }
 
 	enum OptionNames { 
