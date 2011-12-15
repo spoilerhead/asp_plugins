@@ -169,6 +169,14 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
 		        b = to_workspace(0x7fff);
 		    }
 		    
+		    switch(m_deGamma) {
+		    case GAMMA_ALL:     b = fastsqrt(b);
+		                        g = fastsqrt(g);
+		    case GAMMA_FIRST:   r = fastsqrt(r);
+		    
+		    }
+		    
+		    
 		    //Color space conversion
 		    switch(m_conversion) {
 		        case RGB2YCBCR:
@@ -193,7 +201,7 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
 		        default:
 		            break;
 		    }
-		    if(m_deGamma) r = fastSqrt(r);
+		    
 		
 		
     		fimg[0][px_i] = r;
@@ -239,8 +247,6 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
             float g = fimg[1][px_i];
             float b = fimg[2][px_i];
             
-            if(m_deGamma) r *= r;
-            
             //Color space conversion
 		    switch(m_conversion) {
 		        case RGB2YCBCR:
@@ -264,6 +270,13 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
 		        case NONE:
 		        default:
 		            break;
+		    }
+		    
+		    switch(m_deGamma) {
+		    case GAMMA_ALL:     b *= b;
+		                        g *= g;
+		    case GAMMA_FIRST:   r *= r;
+		    
 		    }
 
             *(pOut)         = from_workspace(r); //R

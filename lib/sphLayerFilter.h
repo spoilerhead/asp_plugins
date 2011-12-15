@@ -47,31 +47,15 @@ typedef int pixel;
 #define ImageSettings PluginImageSettings
 #define PipeSettings PluginPipeSettings
 */
-inline float fastSqrt(const float x)  
-{
-  union
-  {
-    int i;
-    float x;
-  } u;
-  u.x = x;
-  u.i = (1<<29) + (u.i >> 1) - (1<<22); 
-  
-  // Two Babylonian Steps (simplified from:)
-  // u.x = 0.5f * (u.x + x/u.x);
-  // u.x = 0.5f * (u.x + x/u.x);
-  u.x =       u.x + x/u.x;
-  u.x = 0.25f*u.x + x/u.x;
 
-  return u.x;
-}
 
 class sphLayerFilter : public LayerFilter
 {
     
 public:
     enum ConvertPixel {NONE, RGB2YCBCR, RGB2HSL, RGB2HSV, RGB2HCL,RGB2LAB, RGB2XYZ};
-	sphLayerFilter(PluginHub *hub, int groupId, const ConvertPixel conversion=NONE, const bool deGamma=false) : m_hub(hub), m_groupId(groupId), m_conversion(conversion), m_deGamma(deGamma) { ; }
+    enum DeGamma {GAMMA_NONE, GAMMA_FIRST, GAMMA_ALL};
+	sphLayerFilter(PluginHub *hub, int groupId, const ConvertPixel conversion=NONE, const DeGamma deGamma=GAMMA_NONE) : m_hub(hub), m_groupId(groupId), m_conversion(conversion), m_deGamma(deGamma) { ; }
 	//virtual ~UsmFilter() { ; }
 	virtual QString name() const =0;
 
@@ -99,7 +83,7 @@ protected:
 	PluginHub *m_hub;
 	int m_groupId;
 	ConvertPixel m_conversion;
-	bool m_deGamma;
+	DeGamma m_deGamma;
 };
 
 
