@@ -11,7 +11,7 @@
 class DenoiseFilter : public sphLayerFilter
 {
 public:
-	DenoiseFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2LAB,false){ } ;
+	DenoiseFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2LAB,GAMMA_NONE){ } ;
 	//virtual ~DenoiseFilter() { ; }
 
 	enum OptionNames { Enable = 1, TresL=2,LowL=3,TresC=4,LowC=5,DePepper=8,ShowEdges=9};
