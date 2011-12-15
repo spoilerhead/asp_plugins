@@ -12,7 +12,7 @@
 class GrainFilter : public sphLayerFilter
 {
 public:
-	GrainFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2YCBCR,true){} ;
+	GrainFilter(PluginHub *hub, int groupId) :sphLayerFilter(hub,groupId,RGB2YCBCR,GAMMA_ALL){} ;
 	//virtual ~UsmFilter() { ; }
 
 	enum OptionNames { Enable = 1, Radius = 2, Seed = 3, Amount=4, Shadow=5,Mid=6,Light=7,Random=8,HiddenSeed=9,ColorGrain=10};

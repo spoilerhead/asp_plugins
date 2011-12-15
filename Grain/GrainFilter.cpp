@@ -118,10 +118,37 @@ inline int mix(int a, int b, int c)
   return c;
 }
 
+inline static unsigned int MurmurHash2 ( const unsigned int key, const unsigned int seed ) {
+    // 'm' and 'r' are mixing constants generated offline.
+    // They're not really 'magic', they just happen to work well.
+    const unsigned int m = 0x5bd1e995;
+    const int r = 24;
 
-#define rgb2ycbcr rgb2ycbcrf
-#define ycbcr2rgb ycbcr2rgbf
+    // Initialize the hash to a 'random' value
+    unsigned int h = seed;
+    unsigned int k = key*m;
+    k ^= k >> r; 
+    k *= m; 
+		
+    h *= m; 
+    h ^= k;
+   
+    h ^= h >> 13;
+	h *= m;
+	h ^= h >> 15;
+	
+	return h;
+}
 
+
+inline unsigned int mNoise(const unsigned int x, const unsigned int y, const unsigned int c, const unsigned int seed) {
+//mix(ix,iy,c+jenkins_hash(id+((seed)<<iter))); 
+    //unsigned int n = (x^2504478101);//^(y*0xf136bc83)^(c*60013)^(seed*409);
+    //n ^= n<<17;
+    //return n;//(n * (n * n * 15731 + 789221) + 1376312589) ;  
+    return MurmurHash2((x<<16^y)  ,seed^c);
+    
+}
 
 /** Process here, Pixels get passed as 3 arrays of width*height, split by channels
 */
@@ -209,7 +236,8 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
              
 
               for(int iter = 0; iter <iterations[c]; iter++ ) {
-                unsigned int qh = mix(ix,iy,c+jenkins_hash(id+((seed)<<iter)));   //hash the pixel TODO: find a faster method
+                //unsigned int qh = mix(ix,iy,c+jenkins_hash(id+((seed)<<iter)));   //hash the pixel TODO: find a faster method
+                unsigned int qh = mNoise(ix,iy,c,seed<<iter);
                 grain += ((qh /4294967295.0f )-0.5f);                       //pseudorandom number -0.5..0.5
               }
               grain /= iterations[c];
