@@ -256,10 +256,11 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             hsv_color hsv = RGB2HCLnew(rgb);                            //to hsv
             //hsv.val = fastsqrt(hsv.val);
            
+          
             float alpha = (COS((hsv.hue-optH)*(2.f*M_PI)))*.5f;                 //cosinal hue difference
             //alpha *= pow(hsv.sat,0.4f);                                       //effect scales with saturation
             alpha *= hsv.sat*(2.f-hsv.sat);                                     //effect scales with saturation, quadratic curve
-            alpha = clipf(alpha,0.f,1.f);
+            //alpha = clipf(alpha,0.f,1.f);
             float valMod = optLmod*hsv.val;                                     //modified liminance value
             float valNew = BLEND(valMod,hsv.val,alpha);                         //blend depending on alpha
             
@@ -281,7 +282,10 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             
                                //blend depending on alpha
             
-            if(optHighlights) valNew = (-0.2782f*valNew+1.191f)*valNew;                           //prevent highlight blowout. quickly fitted in matalb
+            //if(optHighlights) valNew = (-0.2782f*valNew+1.191f)*valNew;                           //prevent highlight blowout. quickly fitted in matalb
+            //x = 0    0.1000    0.2000    0.3000    0.4000    0.5000    0.6000    0.7000    0.8000    0.9000    1.0000
+            //yn = 0.0400    0.1200    0.2100    0.3050    0.4020    0.5010    0.6100    0.6900    0.7700    0.8400    0.9100
+            if(optHighlights) valNew = (((-0.4481f*valNew)+0.5489f)*valNew+0.7659f)*valNew+0.03891f;                           //prevent highlight blowout. quickly fitted in matalb
             
             
             valNew = MidPoint(valNew,optMid);                                   //midpoint adjustment
