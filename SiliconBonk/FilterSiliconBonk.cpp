@@ -255,15 +255,13 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             rgb.b = fastsqrt2(rgb.b);
             hsv_color hsv = RGB2HCLnew(rgb);                            //to hsv
             //hsv.val = fastsqrt(hsv.val);
-           
-          
+
             float alpha = (COS((hsv.hue-optH)*(2.f*M_PI)))*.5f;                 //cosinal hue difference
             //alpha *= pow(hsv.sat,0.4f);                                       //effect scales with saturation
             alpha *= hsv.sat*(2.f-hsv.sat);                                     //effect scales with saturation, quadratic curve
             //alpha = clipf(alpha,0.f,1.f);
             float valMod = optLmod*hsv.val;                                     //modified liminance value
             float valNew = BLEND(valMod,hsv.val,alpha);                         //blend depending on alpha
-            
             
             //===== TEST: band based modification =======
             if(optEQenabled) {
@@ -279,7 +277,6 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             }
             //===== END TEST ============================
             
-            
                                //blend depending on alpha
             
             //if(optHighlights) valNew = (-0.2782f*valNew+1.191f)*valNew;                           //prevent highlight blowout. quickly fitted in matalb
@@ -293,7 +290,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             
             hsv.val = valNew;                                                   //apply and set colors to 0
             hsv.sat *= optSat;
-            hsv.sat = min(hsv.sat,1.f);
+            //hsv.sat = min(hsv.sat,1.f);
             //hsv.hue = 0.0f;
             //hsv.sat *=0.5f;
             
