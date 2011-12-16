@@ -1,0 +1,16 @@
+ <!DOCTYPE RCC><RCC version="1.0">
+    <qresource>
+<file>img/slider_blue.png</file>
+<file>img/slider_cyan.png</file>
+<file>img/slider_gray2.png</file>
+<file>img/slider_gray.png</file>
+<file>img/slider_green.png</file>
+<file>img/slider_hue.png</file>
+<file>img/slider_magenta.png</file>
+<file>img/slider_red.png</file>
+<file>img/slider_sat.png</file>
+<file>img/slider_yellow.png</file>
+
+    </qresource>
+    </RCC>
+

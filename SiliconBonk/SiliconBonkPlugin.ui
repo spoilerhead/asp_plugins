@@ -242,6 +242,12 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_hue.png)0 18 0 18;
+}
+</string>
+         </property>
          <property name="maximum">
           <number>360</number>
          </property>
@@ -255,6 +261,11 @@
        </item>
        <item row="1" column="2">
         <widget class="QSlider" name="SiliconBonkL_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_gray.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -422,6 +433,11 @@
        </item>
        <item row="3" column="2">
         <widget class="QSlider" name="SiliconBonkMid_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_gray.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -476,6 +492,11 @@
        </item>
        <item row="4" column="2">
         <widget class="QSlider" name="SiliconBonkSat_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_sat.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>200</number>
          </property>
@@ -505,6 +526,11 @@
        </property>
        <item row="0" column="1">
         <widget class="QSlider" name="SiliconBonkC0L_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_red.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -521,6 +547,11 @@
        </item>
        <item row="1" column="1">
         <widget class="QSlider" name="SiliconBonkC1L_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_yellow.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -537,6 +568,11 @@
        </item>
        <item row="2" column="1">
         <widget class="QSlider" name="SiliconBonkC2L_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_green.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -553,6 +589,11 @@
        </item>
        <item row="3" column="1">
         <widget class="QSlider" name="SiliconBonkC3L_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_cyan.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -569,6 +610,11 @@
        </item>
        <item row="4" column="1">
         <widget class="QSlider" name="SiliconBonkC4L_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_blue.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -585,6 +631,11 @@
        </item>
        <item row="5" column="1">
         <widget class="QSlider" name="SiliconBonkC5L_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/img/slider_magenta.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
