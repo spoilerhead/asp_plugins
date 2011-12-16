@@ -31,3 +31,8 @@ Makefile
 
 #folder to store compiled versiobs
 */versions/
+
+*perf.data*
+*.sln
+*.vcproj
+*.pdb
