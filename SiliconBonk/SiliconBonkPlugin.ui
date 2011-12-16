@@ -244,7 +244,7 @@
          </property>
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_hue.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_hue.png)0 18 0 18;
 }
 </string>
          </property>
@@ -263,7 +263,7 @@
         <widget class="QSlider" name="SiliconBonkL_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_gray.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_gray.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -435,7 +435,7 @@
         <widget class="QSlider" name="SiliconBonkMid_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_gray.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_gray.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -494,7 +494,7 @@
         <widget class="QSlider" name="SiliconBonkSat_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_sat.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_sat.png)0 18 0 18;
 }</string>
          </property>
          <property name="maximum">
@@ -528,7 +528,7 @@
         <widget class="QSlider" name="SiliconBonkC0L_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_red.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_red.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -549,7 +549,7 @@
         <widget class="QSlider" name="SiliconBonkC1L_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_yellow.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_yellow.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -570,7 +570,7 @@
         <widget class="QSlider" name="SiliconBonkC2L_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_green.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_green.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -591,7 +591,7 @@
         <widget class="QSlider" name="SiliconBonkC3L_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_cyan.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_cyan.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -612,7 +612,7 @@
         <widget class="QSlider" name="SiliconBonkC4L_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_blue.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_blue.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
@@ -633,7 +633,7 @@
         <widget class="QSlider" name="SiliconBonkC5L_slider">
          <property name="styleSheet">
           <string notr="true">QSlider::groove:horizontal {
-    border-image: url(:/img/slider_magenta.png)0 18 0 18;
+    border-image: url(:/Resources/Sliders/slider_magenta.png)0 18 0 18;
 }</string>
          </property>
          <property name="minimum">
