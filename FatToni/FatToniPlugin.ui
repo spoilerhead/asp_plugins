@@ -208,6 +208,11 @@
            <height>16777215</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_hue.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>360</number>
          </property>
@@ -221,6 +226,11 @@
        </item>
        <item row="2" column="2">
         <widget class="QSlider" name="FatToniSH_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_sat.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -309,6 +319,11 @@
        </item>
        <item row="6" column="2">
         <widget class="QSlider" name="FatToniHS_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_hue.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -347,6 +362,11 @@
        </item>
        <item row="16" column="2">
         <widget class="QSlider" name="FatToniCont_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_gray.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>100</number>
          </property>
@@ -446,6 +466,11 @@
        </item>
        <item row="13" column="2">
         <widget class="QSlider" name="FatToniMid_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_gray.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -535,6 +560,11 @@
        </item>
        <item row="7" column="2">
         <widget class="QSlider" name="FatToniSS_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_sat.png)0 18 0 18;
+}</string>
+         </property>
          <property name="minimum">
           <number>0</number>
          </property>
@@ -595,6 +625,11 @@
        </item>
        <item row="14" column="2">
         <widget class="QSlider" name="FatToniMix_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_gray.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>100</number>
          </property>
@@ -696,6 +731,11 @@
        </item>
        <item row="9" column="2">
         <widget class="QSlider" name="FatToniBaseH_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_hue.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>360</number>
          </property>
@@ -709,6 +749,11 @@
        </item>
        <item row="10" column="2">
         <widget class="QSlider" name="FatToniBaseS_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_sat.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>100</number>
          </property>
@@ -722,6 +767,11 @@
        </item>
        <item row="11" column="2">
         <widget class="QSlider" name="FatToniBaseL_slider">
+         <property name="styleSheet">
+          <string notr="true">QSlider::groove:horizontal {
+    border-image: url(:/Resources/Sliders/slider_gray.png)0 18 0 18;
+}</string>
+         </property>
          <property name="maximum">
           <number>100</number>
          </property>
@@ -836,7 +886,7 @@ p, li { white-space: pre-wrap; }
           </font>
          </property>
          <property name="text">
-          <string notr="true" extracomment="version info">FatToni - X5 by Spoilerhead</string>
+          <string notr="true" extracomment="version info">FatToni - T6 by Spoilerhead</string>
          </property>
         </widget>
        </item>
