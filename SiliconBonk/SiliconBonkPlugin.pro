@@ -8,7 +8,7 @@ VERSION = 0.1
 
 # Input
 HEADERS += FilterSiliconBonk.h SiliconBonkPlugin.h ../lib/colorspace.h ../lib/blend_modes.h
-TRANSLATIONS = SiliconBonkPlugin_de.ts SiliconBonkPlugin_fr.ts
+TRANSLATIONS = SiliconBonkPlugin_de.ts SiliconBonkPlugin_fr.ts SiliconBonkPlugin_it.ts SiliconBonkPlugin_ja.ts SiliconBonkPlugin_nl.ts
 RESOURCES += res.qrc
 
 FORMS += SiliconBonkPlugin.ui

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="de_DE">
+<TS version="2.0" language="it_IT">
 <context>
     <name>SiliconBonkForm_bis</name>
     <message>
@@ -16,18 +16,18 @@
     <message>
         <location filename="SiliconBonkPlugin.ui" line="76"/>
         <source>Enable</source>
-        <translation>Aktivieren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="95"/>
         <source>Reset plugin to default values</source>
         <extracomment>reset button tool tip</extracomment>
-        <translation>Auf Standardwerte zurücksetzen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="98"/>
         <source>Reset</source>
-        <translation type="unfinished">Reset</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="114"/>
@@ -38,22 +38,22 @@
         <location filename="SiliconBonkPlugin.ui" line="181"/>
         <source>Options</source>
         <extracomment>Tab Title, keep the order please</extracomment>
-        <translation>Einstellungen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="208"/>
         <source>Hue</source>
-        <translation>Farbton</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="230"/>
         <source>Luminance</source>
-        <translation>Luminanz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="345"/>
         <source>Contrast</source>
-        <translation>Kontrast</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="364"/>
@@ -63,12 +63,12 @@
     <message>
         <location filename="SiliconBonkPlugin.ui" line="405"/>
         <source>Mid</source>
-        <translation>Mitten</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="486"/>
         <source>Saturation</source>
-        <translation>Sättigung</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="507"/>
@@ -113,7 +113,7 @@
     <message>
         <location filename="SiliconBonkPlugin.ui" line="921"/>
         <source>About...</source>
-        <translation>Über...</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.ui" line="939"/>
@@ -139,7 +139,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="70"/>
         <source>Enable Plugin</source>
-        <translation>Plugin Aktivieren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="71"/>
@@ -150,27 +150,27 @@ This increases Highlight details when using high contrast</source>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="73"/>
         <source>Selected Hue</source>
-        <translation>Gewählter Farbton</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="74"/>
         <source>Luminance Boost</source>
-        <translation>Helligkeitsänderung</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="75"/>
         <source>Contrast</source>
-        <translation>Kontrast</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="76"/>
         <source>Midpoint</source>
-        <translation>Mittenkorrektur</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="77"/>
         <source>Saturation (keep color)</source>
-        <translation>Sättigung (Farbe behalten)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="SiliconBonkPlugin.cpp" line="80"/>
