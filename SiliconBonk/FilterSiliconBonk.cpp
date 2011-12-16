@@ -250,9 +250,9 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             rgb.b = I16TOF(iB);
             
             //simple correction (modify color, do inverse to opposite --------------------------
-            rgb.r = fastsqrt(rgb.r);
-            rgb.g = fastsqrt(rgb.g);
-            rgb.b = fastsqrt(rgb.b);
+            rgb.r = fastsqrt2(rgb.r);
+            rgb.g = fastsqrt2(rgb.g);
+            rgb.b = fastsqrt2(rgb.b);
             hsv_color hsv = RGB2HCLnew(rgb);                            //to hsv
             //hsv.val = fastsqrt(hsv.val);
            
@@ -295,6 +295,10 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             hsv.val = clipf(hsv.val,0.f,1.f);
             //hsv.val *= hsv.val;
             rgb = HCLnew2RGB(hsv);
+            
+            rgb.r = clipf(rgb.r,0.f,1.f);
+            rgb.g = clipf(rgb.g,0.f,1.f);
+            rgb.b = clipf(rgb.b,0.f,1.f);
             
             rgb.r *= rgb.r;
             rgb.g *= rgb.g;
