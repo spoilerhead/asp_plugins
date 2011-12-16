@@ -148,7 +148,7 @@ float FASTLOCAL ContrastBerndFast(const float val, const float c) {
 }
 
 float FASTLOCAL precomputeContrastFactor(const float c) {
-    return ((c+0.5f)/4.4f-0.1f);
+    return ((c/*+0.5f*/)/4.4f/*-0.1f*/);
 }
 
 float FASTLOCAL MidPoint(const float val, const float strength) {
@@ -229,7 +229,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
 	    if(optEQ[i] != 0) optEQenabled = true; //check if at least one band is enabled
 	}
     
-    if(!optHighlights) optMid += 0.1f; //increment mids if highlight protection is off
+   // if(!optHighlights) optMid += 0.1f; //increment mids if highlight protection is off
 	// ========================================================================
     rgb_color rgb;
 	
@@ -250,8 +250,11 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             rgb.b = I16TOF(iB);
             
             //simple correction (modify color, do inverse to opposite --------------------------
+            rgb.r = fastsqrt(rgb.r);
+            rgb.g = fastsqrt(rgb.g);
+            rgb.b = fastsqrt(rgb.b);
             hsv_color hsv = RGB2HCLnew(rgb);                            //to hsv
-            hsv.val = fastsqrt(hsv.val);
+            //hsv.val = fastsqrt(hsv.val);
            
             float alpha = (COS((hsv.hue-optH)*(2.f*M_PI)))*.5f;                 //cosinal hue difference
             //alpha *= pow(hsv.sat,0.4f);                                       //effect scales with saturation
@@ -290,8 +293,12 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             //hsv.sat *=0.5f;
             
             hsv.val = clipf(hsv.val,0.f,1.f);
-            hsv.val *= hsv.val;
+            //hsv.val *= hsv.val;
             rgb = HCLnew2RGB(hsv);
+            
+            rgb.r *= rgb.r;
+            rgb.g *= rgb.g;
+            rgb.b *= rgb.b;
             
 			//back to int
 			iR = FTOI16(rgb.r);
