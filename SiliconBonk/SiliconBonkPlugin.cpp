@@ -42,11 +42,11 @@ bool SiliconBonkPlugin::init(PluginHub *hub, int id, int groupId, const QString 
 bool SiliconBonkPlugin::registerFilters()
 {
     SiliconBonkFilter *fBernd = new SiliconBonkFilter(m_hub, m_groupId);
-    
+    /*
     if (m_hub->addFilter(fBernd, PluginHub::Before, QString("Curves"))) {
         qDebug() << "Successfully registered "<<fBernd->name()<<" filter before Curves";
 	} else
-    
+    */
     
     if (m_hub->addFilter(fBernd, PluginHub::Before, QString("GrainFilter"))) {
         qDebug() << "Successfully registered "<<fBernd->name()<<" filter before GrainFilter";

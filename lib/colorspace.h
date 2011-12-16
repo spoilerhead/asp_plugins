@@ -526,6 +526,8 @@ COLORSPACE_FASTLOCAL hsv_color RGB2HCLnew(rgb_color rgb) {
         hsv.hue = 0.f;
         return hsv;
     }
+    
+    hsv.sat /= hsv.val; //normalize
 /* Normalize value to 1 */
     const float normalize = 1.f/rgb_max;
     rgb.r *= normalize ;
@@ -578,7 +580,8 @@ COLORSPACE_FASTLOCAL rgb_color HCLnew2RGB(const hsv_color hsv) {
     const float hf = hsv.hue * 6;
     const int i    = (int) floor(hf);
     const float f  = hf - i;
-    const float c  = hsv.sat;
+    const float c  = hsv.val* hsv.sat;
+//  const float c  = hsv.sat;
     const float qv = c*(1.f-f);
     const float tv = c*f;
     
