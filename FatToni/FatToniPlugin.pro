@@ -8,7 +8,8 @@ VERSION = 0.1
 
 # Input
 HEADERS += FilterFatToni.h FatToniPlugin.h ../lib/colorspace.h ../lib/blend_modes.h
-TRANSLATIONS = FatToniPlugin_de.ts FatToniPlugin_fr.ts
+TRANSLATIONS = FatToniPlugin_de.ts FatToniPlugin_fr.ts FatToniPlugin_it.ts FatToniPlugin_ja.ts FatToniPlugin_nl.ts
+RESOURCES += res.qrc
 
 FORMS += FatToniPlugin.ui
 SOURCES += FatToniPlugin.cpp    
