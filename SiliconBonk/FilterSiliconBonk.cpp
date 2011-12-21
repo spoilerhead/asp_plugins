@@ -258,7 +258,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
 
             float alpha = (COS((hsv.hue-optH)*(2.f*M_PI)))*.5f;                 //cosinal hue difference
             //alpha *= pow(hsv.sat,0.4f);                                       //effect scales with saturation
-            alpha *= hsv.sat*(2.f-hsv.sat);                                     //effect scales with saturation, quadratic curve
+            alpha *= clipf(hsv.sat*(2.f-hsv.sat),0.f,1.f);                                     //effect scales with saturation, quadratic curve
             //alpha = clipf(alpha,0.f,1.f);
             float valMod = optLmod*hsv.val;                                     //modified liminance value
             float valNew = BLEND(valMod,hsv.val,alpha);                         //blend depending on alpha
@@ -270,7 +270,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
                 int   hiBand    = (loBand+1)%numBands;          //upper band bin
                 float bandFract = band-loBand;                  //fractional part
                 float newL      = optEQmod[loBand]*(1.f-bandFract) + optEQmod[hiBand]*bandFract;
-                float alphaEQ   = hsv.sat*(2.f-hsv.sat);        //effect scales with saturation, quadratic curve
+                float alphaEQ   = clipf(hsv.sat*(2.f-hsv.sat),0.f,1.f);        //effect scales with saturation, quadratic curve
                 float valModEQ    = newL*valNew;                //modified liminance value
                 valNew    = BLEND(valModEQ,valNew,alphaEQ);     //blend depending on alpha
        
