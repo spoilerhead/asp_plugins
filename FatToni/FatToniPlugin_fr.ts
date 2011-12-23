@@ -31,78 +31,78 @@
     </message>
     <message>
         <location filename="FatToniPlugin.ui" line="174"/>
-        <location filename="FatToniPlugin.ui" line="303"/>
-        <location filename="FatToniPlugin.ui" line="646"/>
+        <location filename="FatToniPlugin.ui" line="313"/>
+        <location filename="FatToniPlugin.ui" line="681"/>
         <source>Hue</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="FatToniPlugin.ui" line="196"/>
-        <location filename="FatToniPlugin.ui" line="529"/>
-        <location filename="FatToniPlugin.ui" line="668"/>
+        <location filename="FatToniPlugin.ui" line="554"/>
+        <location filename="FatToniPlugin.ui" line="703"/>
         <source>Saturation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="234"/>
-        <location filename="FatToniPlugin.ui" line="548"/>
-        <location filename="FatToniPlugin.ui" line="719"/>
+        <location filename="FatToniPlugin.ui" line="244"/>
+        <location filename="FatToniPlugin.ui" line="578"/>
+        <location filename="FatToniPlugin.ui" line="764"/>
         <source>0:H,0,20,150-0.025:H,15,25,155-0.05:H,30,30,155-0.075:H,55,35,150-0.1:H,80,40,150-0.125:H,105,45,155-0.15:H,130,50,155-0.175:H,155,55,150-0.2:H,180,60,150-0.225:H,205,65,155-0.25:H,230,70,155-0.275:H,245,75,150-0.3:H,4,80,150-0.325:H,19,85,155-0.35:H,34,90,155-0.375:H,59,95,150-0.4:H,84,100,150-0.425:H,109,105,155-0.45:H,134,110,155-0.45:H,134,110,155-0.475:H,159,115,150-0.5:H,184,120,150-0.525:H,209,125,155-0.55:H,224,130,155-0.575:H,239,135,150-0.6:H,254,140,150-0.625:H,13,145,155-0.65:H,38,150,155-0.675:H,63,155,150-0.7:H,88,160,150-0.725:H,113,165,155-0.75:H,138,170,155-0.775:H,163,175,150-0.8:H,188,180,150-0.825:H,203,185,155-0.85:H,218,190,155-0.875:H,233,195,150-0.9:H,248,200,150-0.925:H,17,205,155-0.950000000000001:H,42,210,155-0.975000000000001:H,67,215,150-1:H,92,220,150</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="322"/>
-        <location filename="FatToniPlugin.ui" line="706"/>
+        <location filename="FatToniPlugin.ui" line="337"/>
+        <location filename="FatToniPlugin.ui" line="746"/>
         <source>0:H,0,168,168-0.2:H,72,168,168-0.4:H,144,168,168-0.6:H,206,168,168-0.8:H,288,168,168-1:H,0,168,168</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="373"/>
+        <location filename="FatToniPlugin.ui" line="393"/>
         <source>Contrast</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="414"/>
+        <location filename="FatToniPlugin.ui" line="434"/>
         <source>Highlights:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="421"/>
+        <location filename="FatToniPlugin.ui" line="441"/>
         <source>Shadows:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="440"/>
+        <location filename="FatToniPlugin.ui" line="460"/>
         <source>Mid</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="497"/>
+        <location filename="FatToniPlugin.ui" line="522"/>
         <source>Base:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="516"/>
+        <location filename="FatToniPlugin.ui" line="541"/>
         <source>Controls:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="589"/>
+        <location filename="FatToniPlugin.ui" line="619"/>
         <source>Separation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="690"/>
+        <location filename="FatToniPlugin.ui" line="725"/>
         <source>Luminance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="794"/>
+        <location filename="FatToniPlugin.ui" line="844"/>
         <source>About...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="FatToniPlugin.ui" line="812"/>
+        <location filename="FatToniPlugin.ui" line="862"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }

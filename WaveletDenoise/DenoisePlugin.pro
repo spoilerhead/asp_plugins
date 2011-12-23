@@ -5,6 +5,7 @@
 include(../lib/includes.pri)
 include(../lib/fastmathinclude.pri)
 VERSION = 0.1
+TRANSLATIONS = DenoiseFilter_de.ts DenoiseFilter_fr.ts DenoiseFilter_it.ts DenoiseFilter_ja.ts DenoiseFilter_nl.ts
 
 # Input
 HEADERS += DenoiseFilter.h DenoisePlugin.h wavelet.h

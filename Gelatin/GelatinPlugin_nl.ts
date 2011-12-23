@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="de_DE">
+<TS version="2.0" language="nl_NL">
 <context>
     <name>GelatinForm_bis</name>
     <message>
@@ -21,16 +21,6 @@
     <message>
         <location filename="GelatinPlugin.ui" line="83"/>
         <source>Stretch Contrast</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="GelatinPlugin.ui" line="517"/>
-        <source>Color</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="GelatinPlugin.ui" line="533"/>
-        <source>Tint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -78,6 +68,16 @@
     <message>
         <location filename="GelatinPlugin.ui" line="490"/>
         <source>Color Control:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="GelatinPlugin.ui" line="517"/>
+        <source>Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="GelatinPlugin.ui" line="533"/>
+        <source>Tint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

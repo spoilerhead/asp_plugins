@@ -8,7 +8,7 @@ VERSION = 0.1
 
 # Input
 HEADERS += FilterGelatin.h GelatinPlugin.h ../lib/colorspace.h ../lib/blend_modes.h
-TRANSLATIONS = GelatinPlugin_de.ts GelatinPlugin_fr.ts
+TRANSLATIONS = GelatinPlugin_de.ts GelatinPlugin_fr.ts GelatinPlugin_it.ts GelatinPlugin_ja.ts GelatinPlugin_nl.ts
 
 FORMS += GelatinPlugin.ui
 SOURCES += GelatinPlugin.cpp    

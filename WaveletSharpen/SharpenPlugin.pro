@@ -8,7 +8,7 @@ VERSION = 0.1
 
 # Input
 HEADERS += FilterSharpen.h SharpenPlugin.h wavelet.h FilterUSM.h FilterLLorens.h 
-TRANSLATIONS = SharpenPlugin_de.ts SharpenPlugin_fr.ts
+TRANSLATIONS = SharpenPlugin_de.ts SharpenPlugin_fr.ts SharpenPlugin_it.ts SharpenPlugin_ja.ts SharpenPlugin_nl.ts
 
 FORMS += sph_wavelet_sharpen.ui
 SOURCES += SharpenPlugin.cpp    
