@@ -5,6 +5,7 @@
 
 #include <QDebug>
 #include <iostream>
+#include <QSettings>
 
 #define PLUGIN_NAME_HR "Wavelet Denoise 2"
 
@@ -18,6 +19,10 @@ bool DenoisePlugin::init(PluginHub *hub, int id, int groupId, const QString &bun
 	m_hub = hub;
 	m_id = id;
 	m_groupId = groupId;
+	
+	// Store our group ID and group name (andrewj)
+    QSettings oSettings("Bibble and AfterShot Plugins", "PluginGroups");
+    oSettings.setValue(group(), groupId);
 	return true;
 }
 

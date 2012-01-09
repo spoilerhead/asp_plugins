@@ -8,8 +8,9 @@
 
 #include <QDebug>
 #include <iostream>
+#include <QSettings>
 
-#define PLUGIN_NAME_HR "Wavelet Sharpen 2"
+#define PLUGIN_NAME_HR "Wavelet Sharpen 3"
 
 extern "C" BIBBLE_API BaseB5Plugin *b5plugin() { return new SharpenPlugin; }
 
@@ -21,6 +22,10 @@ bool SharpenPlugin::init(PluginHub *hub, int id, int groupId, const QString &bun
 	m_hub = hub;
 	m_id = id;
 	m_groupId = groupId;
+	
+	// Store our group ID and group name (andrewj)
+    QSettings oSettings("Bibble and AfterShot Plugins", "PluginGroups");
+    oSettings.setValue(group(), groupId);
 	return true;
 }
 

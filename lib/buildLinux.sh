@@ -1,6 +1,6 @@
 #!/bin/bash
 export PATH=../../QT/current/Desktop/Qt/474/gcc/bin:$PATH
-echo $PATH
+
 #make clean
 make clean
 #build 32bit spec
