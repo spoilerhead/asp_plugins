@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>292</width>
+    <width>274</width>
     <height>154</height>
    </rect>
   </property>
@@ -110,6 +110,12 @@
      </item>
      <item row="0" column="1">
       <widget class="QCheckBox" name="SiliconBonkHighlights_checkbox">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
        <property name="text">
         <string>Protect Highlights</string>
        </property>
@@ -125,7 +131,7 @@
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>40</width>
+         <width>10</width>
          <height>20</height>
         </size>
        </property>
