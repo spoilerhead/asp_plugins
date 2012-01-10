@@ -11,6 +11,7 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include <QSettings>
 
 
 #define PLUGIN_NAME_HR "FatToni"
@@ -32,11 +33,16 @@ extern "C" BIBBLE_API B5Plugin *b5plugin() { return new FatToniPlugin; }
 bool FatToniPlugin::init(PluginHub *hub, int id, int groupId, const QString &bundlePath)
 {
     Q_UNUSED(bundlePath);
+    qDebug() << "Initialising "<<PLUGIN_NAME_HR<<" filter";
     
     if(hub == NULL) return false;
 	m_hub = hub;
 	m_id = id;
 	m_groupId = groupId;
+	
+	// Store our group ID and group name (andrewj)
+    QSettings oSettings("Bibble and AfterShot Plugins", "PluginGroups");
+    oSettings.setValue(group(), groupId);
 	return true;
 }
 

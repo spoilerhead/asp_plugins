@@ -5,7 +5,7 @@
 
 #include <QDebug>
 #include <iostream>
-
+#include <QSettings>
 
 extern "C" BIBBLE_API BaseB5Plugin *b5plugin() { return new GrainPlugin; }
 
@@ -17,13 +17,17 @@ bool GrainPlugin::init(PluginHub *hub, int id, int groupId, const QString &bundl
 	m_id = id;
 	m_groupId = groupId;
 	//m_seed = NULL;
-	qDebug()<<"Grain Filter init...\n";
+	qDebug()<<"Grain Filter init...";
+	
+	// Store our group ID and group name (andrewj)
+    QSettings oSettings("Bibble and AfterShot Plugins", "PluginGroups");
+    oSettings.setValue(group(), groupId);
 	return true;
 }
 
 bool GrainPlugin::registerFilters()
 {
-    qDebug()<<"Grain Filter register...\n";
+    qDebug()<<"Grain Filter register...";
 	GrainFilter *mirror = new GrainFilter(m_hub, m_groupId);
 	if (m_hub->addFilter(mirror, PluginHub::After/*Before*/, QString("Curves"))) {
 //	if (m_hub->addFilter(mirror, PluginHub::After, QString("RgbToLab"))) {
@@ -31,7 +35,7 @@ bool GrainPlugin::registerFilters()
 	    qDebug()<<"SPH Grain Filter Registered"<<endl;
 		return true;
 	}
-	qDebug() <<"Grain Filter init... failed\n";
+	qDebug() <<"Grain Filter init... failed";
 	qDebug() << "Failed to load the Grain filter";
 	return false;
 }
