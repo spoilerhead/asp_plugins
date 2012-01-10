@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="fr_FR">
+<TS version="2.0" language="en_US">
 <context>
     <name>SharpenPlugin</name>
     <message>
         <location filename="SharpenPlugin.cpp" line="63"/>
         <source>Enables Usm</source>
-        <translation>Activer l&apos;USM/MDA</translation>
+        <translation>Active Usm</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="64"/>
         <source>Increases the Radius of the Blur filter</source>
-        <translation>Accroît le rayon du filtre de flou</translation>
+        <translation>Augmente le rayon du filtre Flou</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="65"/>
@@ -21,32 +21,32 @@
     <message>
         <location filename="SharpenPlugin.cpp" line="66"/>
         <source>Define Minimum Edge for sharpening</source>
-        <translation>Défini le contour minimum pour l&apos;accentuation</translation>
+        <translation>Définit le bord minimal pour la netteté</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="67"/>
         <source>Makes usm work as clarity control</source>
-        <translation>Fait fonctionner l&apos;USM en mode clarté</translation>
+        <translation>Fait fonctionner Usm comme commande de la clarté</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="70"/>
         <source>Enables Gradient Sharpening</source>
-        <translation>Active l&apos;accentuation Gradient</translation>
+        <translation>Active Netteté dégradée</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="71"/>
         <source>Gradient Sharpening Strength</source>
-        <translation>Niveau de l&apos;accentuation du Gradient</translation>
+        <translation>Intensité de la netteté dégradée</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="72"/>
         <source>With of the Gradient (slow)</source>
-        <translation>Largeur du Gradient (lent)</translation>
+        <translation>Largeur de dégradé (lent)</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="73"/>
         <source>Amount of Microcontrast to be added</source>
-        <translation>Quantité de microcontrast à appliquer</translation>
+        <translation>Quantité de microcontraste à ajouter</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="77"/>
@@ -58,31 +58,31 @@
         <location filename="SharpenPlugin.cpp" line="78"/>
         <location filename="SharpenPlugin.cpp" line="89"/>
         <source>Sharpening Strength</source>
-        <translation>Puissance de l&apos;accentuation</translation>
+        <translation>Intensité de la netteté</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="79"/>
         <location filename="SharpenPlugin.cpp" line="90"/>
         <source>Sharpening Radius</source>
-        <translation>Rayon de l&apos;accentuation</translation>
+        <translation>Rayon de la netteté</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="81"/>
         <location filename="SharpenPlugin.cpp" line="92"/>
         <source>Salt and Pepper noise removal (slow)</source>
-        <translation>Retrait du bruit de type sel et poivre (lent)</translation>
+        <translation>Suppression du bruit Poivre et sel (lent)</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="82"/>
         <location filename="SharpenPlugin.cpp" line="93"/>
         <source>Limit Sharpening to Edges</source>
-        <translation>Limite de l&apos;accentuation des contours</translation>
+        <translation>Limiter la netteté aux bords</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="83"/>
         <location filename="SharpenPlugin.cpp" line="94"/>
         <source>Apply with clarity mask</source>
-        <translation type="unfinished"></translation>
+        <translation>Appliquer avec un masque de clarté</translation>
     </message>
 </context>
 <context>
@@ -90,96 +90,92 @@
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="20"/>
         <source>Wavelet Sharpen</source>
-        <translation></translation>
+        <translation>Netteté Wavelet</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="64"/>
         <source>Gradient</source>
-        <translation></translation>
+        <translation>Dégradé</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="83"/>
         <source>Enable Usm sharpening</source>
-        <translation>Activer l&apos;accentuation USM (MDA)</translation>
+        <translation>Activer la netteté Usm</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="89"/>
         <source>USM</source>
-        <translation>USM (MDA)</translation>
+        <translation>USM</translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="108"/>
+        <location filename="sph_wavelet_sharpen.ui" line="152"/>
+        <source>Enable Wavelet sharpening</source>
+        <translation>Activer la netteté Wavelet</translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="111"/>
+        <source>Wavelet 1</source>
+        <translation>Wavelet 1</translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="130"/>
+        <location filename="sph_wavelet_sharpen.ui" line="174"/>
+        <source>DePepper</source>
+        <translation>Supprimer le bruit Poivre et sel</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="133"/>
         <location filename="sph_wavelet_sharpen.ui" line="177"/>
         <source> S+P</source>
-        <translation type="unfinished"></translation>
+        <translation> S+P</translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="155"/>
+        <source>Wavelet 2</source>
+        <translation>Wavelet 2</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="212"/>
         <location filename="sph_wavelet_sharpen.ui" line="231"/>
         <location filename="sph_wavelet_sharpen.ui" line="250"/>
         <source>Clarity Mode</source>
-        <translation>Mode clarté</translation>
-    </message>
-    <message>
-        <location filename="sph_wavelet_sharpen.ui" line="108"/>
-        <location filename="sph_wavelet_sharpen.ui" line="152"/>
-        <source>Enable Wavelet sharpening</source>
-        <translation>Activer l&apos;accentuation Wavelet</translation>
-    </message>
-    <message>
-        <location filename="sph_wavelet_sharpen.ui" line="111"/>
-        <source>Wavelet 1</source>
-        <translation></translation>
-    </message>
-    <message>
-        <location filename="sph_wavelet_sharpen.ui" line="130"/>
-        <location filename="sph_wavelet_sharpen.ui" line="174"/>
-        <source>DePepper</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source> S+P Reduction</source>
-        <translation type="obsolete">Réduction S+P</translation>
-    </message>
-    <message>
-        <location filename="sph_wavelet_sharpen.ui" line="155"/>
-        <source>Wavelet 2</source>
-        <translation></translation>
+        <translation>Mode de clarté</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="301"/>
         <source>Grad/USM</source>
         <extracomment>Tab Title, keep the order please</extracomment>
-        <translation></translation>
+        <translation>Dégradé/USM</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="339"/>
         <location filename="sph_wavelet_sharpen.ui" line="812"/>
         <location filename="sph_wavelet_sharpen.ui" line="1235"/>
         <source>Amount </source>
-        <translation>Niveau</translation>
+        <translation>Quantité </translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="388"/>
         <location filename="sph_wavelet_sharpen.ui" line="756"/>
         <location filename="sph_wavelet_sharpen.ui" line="840"/>
         <source>Radius </source>
-        <translation>Rayon</translation>
+        <translation>Rayon </translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="437"/>
         <source>Threshold </source>
-        <translation>Seuil</translation>
+        <translation>Seuil </translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="480"/>
         <source>Strength</source>
-        <translation>Niveau</translation>
+        <translation>Intensité</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="549"/>
         <source>Width/Iter</source>
-        <translation>Largeur/Iter</translation>
+        <translation>Largeur/itération</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="608"/>
@@ -190,75 +186,55 @@
         <location filename="sph_wavelet_sharpen.ui" line="729"/>
         <source>Wavelet</source>
         <extracomment>Tab Title</extracomment>
-        <translation></translation>
+        <translation>Wavelet</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="784"/>
         <location filename="sph_wavelet_sharpen.ui" line="868"/>
         <source>Edge </source>
-        <translation>Contour</translation>
+        <translation>Bord </translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="1256"/>
         <source>About...</source>
-        <translation>À propos</translation>
+        <translation>À propos de...</translation>
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="1271"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+        <source>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;(C) 2010-11 Spoilerhead&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;This plugin is free software, but i would appreciate it if you&apos;d give me some support by &lt;/span&gt;&lt;a href=&quot;http://web.student.tuwien.ac.at/~e0326004/bibble/&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; text-decoration: underline; color:#0000ff;&quot;&gt;giving me a little donation, so i can buy myself beer, pizza and most important: coffee&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Wavelet Filter based on the Wavelet Sharpen Gimp plugin (C) 2008 by Marco Rossini&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://registry.gimp.org/node/9836&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; text-decoration: underline; color:#0000ff;&quot;&gt;http://registry.gimp.org/node/9836&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;USM filter based on the gimp IIR-USM code Copyright (C) 1999 Winston Chang&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Gradient Sharpening based on the sharpening code by Manuel Llorens &lt;/span&gt;&lt;a href=&quot;http://www.rawness.es/sharpening/?lang=en&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; text-decoration: underline; color:#0000ff;&quot;&gt;http://www.rawness.es/sharpening/?lang=en&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;This Plugin is distributed under the &lt;/span&gt;&lt;a href=&quot;http://www.gnu.org/licenses/gpl-2.0.html&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; text-decoration: underline; color:#0000ff;&quot;&gt;General Public License GPLv2+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:8pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;(C) 2010-11 Spoilerhead&lt;/span&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;This plugin is free software, but i would appreciate it if you'd give me some support by &lt;/span&gt;&lt;a href="http://web.student.tuwien.ac.at/~e0326004/bibble/"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;giving me a little donation, so i can buy myself beer, pizza and most important: coffee&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;Wavelet Filter based on the Wavelet Sharpen Gimp plugin (C) 2008 by Marco Rossini&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;a href="http://registry.gimp.org/node/9836"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;http://registry.gimp.org/node/9836&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;USM filter based on the gimp IIR-USM code Copyright (C) 1999 Winston Chang&lt;/span&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;Gradient Sharpening based on the sharpening code by Manuel Llorens &lt;/span&gt;&lt;a href="http://www.rawness.es/sharpening/?lang=en"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;http://www.rawness.es/sharpening/?lang=en&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;This Plugin is distributed under the &lt;/span&gt;&lt;a href="http://www.gnu.org/licenses/gpl-2.0.html"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;General Public License GPLv2+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd"&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(C) 2010 Spoilerhead&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This plugin is free software, but i would appreciate it if you&apos;d give me some support by &lt;a href=&quot;http://web.student.tuwien.ac.at/~e0326004/bibble/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;giving me a little donation, so i can buy myself beer, pizza and most important: coffee&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Wavelet Filter based on the Wavelet Sharpen Gimp plugin (C) 2008 by Marco Rossini&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://registry.gimp.org/node/9836&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://registry.gimp.org/node/9836&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;USM filter based on the gimp IIR-USM code Copyright (C) 1999 Winston Chang&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Gradient Sharpening based on the sharpening code by Manuel Llorens &lt;a href=&quot;http://www.rawness.es/sharpening/?lang=en&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://www.rawness.es/sharpening/?lang=en&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This Plugin is distributed under the &lt;a href=&quot;http://www.gnu.org/licenses/gpl-2.0.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;General Public License GPLv2+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;(C) 2010 Spoilerhead&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ce module est un logiciel libre mais j&apos;apprécierai si vous me soutenez en me &lt;a href=&quot;http://web.student.tuwien.ac.at/~e0326004/bibble/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;donnant un petit quelque chose pour que je puisse me payer une bière, une pizza et surtout du café.&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le filtre Wavelet Filter est basé sur le module pour The Gimp Wavelet Sharpen (C) 2008 by Marco Rossini&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;http://registry.gimp.org/node/9836&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://registry.gimp.org/node/9836&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Le filtre USM est basé sur le module pour The Gimp IIR-USM code Copyright (C) 1999 Winston Chang&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;L&apos;accentuation Gradient est basé sur le code d&apos;accentuation de Manuel Llorens &lt;a href=&quot;http://www.rawness.es/sharpening/?lang=en&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://www.rawness.es/sharpening/?lang=en&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Ce module est distribué sous la licence &lt;a href=&quot;http://www.gnu.org/licenses/gpl-2.0.html&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;General Public License GPLv2+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; text-decoration: underline; color:#0000ff;&quot;&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'Sans Serif'; font-size:8pt; font-weight:400; font-style:normal;"&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;(C) 2010-11 Spoilerhead&lt;/span&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;This plugin is free software, but i would appreciate it if you'd give me some support by &lt;/span&gt;&lt;a href="http://web.student.tuwien.ac.at/~e0326004/bibble/"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;giving me a little donation, so i can buy myself beer, pizza and most important: coffee&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;Wavelet Filter based on the Wavelet Sharpen Gimp plugin (C) 2008 by Marco Rossini&lt;/span&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;a href="http://registry.gimp.org/node/9836"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;http://registry.gimp.org/node/9836&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;USM filter based on the gimp IIR-USM code Copyright (C) 1999 Winston Chang&lt;/span&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;Gradient Sharpening based on the sharpening code by Manuel Llorens &lt;/span&gt;&lt;a href="http://www.rawness.es/sharpening/?lang=en"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;http://www.rawness.es/sharpening/?lang=en&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';"&gt;&lt;/p&gt;
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-family:'Sans';"&gt;This Plugin is distributed under the &lt;/span&gt;&lt;a href="http://www.gnu.org/licenses/gpl-2.0.html"&gt;&lt;span style=" font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;General Public License GPLv2+&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; text-decoration: underline; color:#0000ff;"&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 </TS>
