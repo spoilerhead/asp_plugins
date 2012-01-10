@@ -1,0 +1,3 @@
+
+lupdate *.pro
+lrelease *.pro
