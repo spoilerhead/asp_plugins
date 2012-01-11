@@ -232,6 +232,12 @@
 				RelativePath="SharpenPlugin_de.ts" />
 			<File
 				RelativePath="SharpenPlugin_fr.ts" />
+			<File
+				RelativePath="SharpenPlugin_it.ts" />
+			<File
+				RelativePath="SharpenPlugin_ja.ts" />
+			<File
+				RelativePath="SharpenPlugin_nl.ts" />
 		</Filter>
 		<Filter
 			Name="Form Files"
