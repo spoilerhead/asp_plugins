@@ -457,7 +457,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Mid</string>
+          <string extracomment="This is the mid point of the mixing function">Mid</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -518,6 +518,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="toolTip">
+          <string>Base Color, like using colored paper when printing</string>
+         </property>
          <property name="text">
           <string>Base:</string>
          </property>
@@ -538,7 +541,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Controls:</string>
+          <string extracomment="This is kinda like &quot;extended controls&quot;,&quot;tunables&quot; or &quot;tweaks&quot;">Controls:</string>
          </property>
         </widget>
        </item>
@@ -616,7 +619,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Separation</string>
+          <string extracomment="This is the separation between shadow and highlight tint">Separation</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
