@@ -1,8 +1,15 @@
 <!DOCTYPE PropertyScribe>
 <PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
-    <PluginFileData identifier="sph.FatToni" website="http://web.student.tuwien.ac.at/~e0326004/bibble/" windowsLibFile="/home/spoilerhead/code/ASP_Plugins/repo/FatToni/release/FatToniPlugin0.dll" resourcesPath="" macLibFile="/home/spoilerhead/code/ASP_Plugins/repo/FatToni/mac/libFatToniPlugin.dylib" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/FatToni/libFatToniPlugin.so" author="Spoilerhead" minorVersion="5" bugfixVersion="0" name="FatToni" majorVersion="0" sdkVersion="8" dataVersion="1">
+    <PluginFileData identifier="sph.FatToni" website="http://web.student.tuwien.ac.at/~e0326004/bibble/" windowsLibFile="/home/spoilerhead/code/ASP_Plugins/repo/FatToni/release/FatToniPlugin0.dll" resourcesPath="" macLibFile="/home/spoilerhead/code/ASP_Plugins/repo/FatToni/mac/libFatToniPlugin.dylib" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/FatToni/libFatToniPlugin.so" author="Spoilerhead" minorVersion="30" bugfixVersion="0" name="FatToni" majorVersion="0" sdkVersion="8" dataVersion="1">
         <StringList name="uiFiles">
             <li>/home/spoilerhead/code/ASP_Plugins/repo/FatToni/FatToniPlugin.ui</li>
+        </StringList>
+        <StringList name="localeFiles">
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/FatToni/FatToniPlugin_de.qm</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/FatToni/FatToniPlugin_fr.qm</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/FatToni/FatToniPlugin_it.qm</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/FatToni/FatToniPlugin_ja.qm</li>
+            <li>/home/spoilerhead/code/ASP_Plugins/repo/FatToni/FatToniPlugin_nl.qm</li>
         </StringList>
     </PluginFileData>
 </PropertyScribe>

@@ -236,6 +236,7 @@ COLORSPACE_FASTLOCAL void rgb2hsv(float *r, float *g, float *b) {
 
 COLORSPACE_FASTLOCAL float HCL_VAL(const rgb_color rgb) {
     return 0.299f*rgb.r + .587f*rgb.g + .114f*rgb.b; //ntcs primaries Y'601
+//    return 0.2126f*rgb.r + 0.7152f*rgb.g + 0.0722f*rgb.b; //Rec 708
 }
 
 COLORSPACE_FASTLOCAL hsv_color RGB2HCL(rgb_color rgb) {
