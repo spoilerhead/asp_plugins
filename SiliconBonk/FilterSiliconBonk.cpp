@@ -9,6 +9,8 @@
 #include "blend_modes.h"
 #include "fastmath.h"
 
+#include "sqrtlut.h"
+
 #include <QDebug>
 #include <iostream>
 #include <cmath>
@@ -162,8 +164,6 @@ static inline float paramLtoValue(const float v) {
     return 1.f+0.5f*(v/50.f);
 }
 
-
-#include "sqrtlut.h"
 
 void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &settings, PluginTile &tile, PluginOptionList &layerOptions, int layerPos) const
 {
