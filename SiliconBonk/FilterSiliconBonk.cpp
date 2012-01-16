@@ -162,6 +162,9 @@ static inline float paramLtoValue(const float v) {
     return 1.f+0.5f*(v/50.f);
 }
 
+
+#include "sqrtlut.h"
+
 void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &settings, PluginTile &tile, PluginOptionList &layerOptions, int layerPos) const
 {
 	Q_UNUSED( options );
@@ -245,6 +248,8 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
 			iR = *(pSrc)        ;
 			iG = *(pSrc + pw)   ;
 			iB = *(pSrc + 2*pw) ;
+            
+            /*
             rgb.r = I16TOF(iR);                                                 //to float space
             rgb.g = I16TOF(iG);
             rgb.b = I16TOF(iB);
@@ -253,6 +258,12 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             rgb.r = fastsqrt2(rgb.r);
             rgb.g = fastsqrt2(rgb.g);
             rgb.b = fastsqrt2(rgb.b);
+            */
+            //Use LUT lookup
+            rgb.r = sqrtLUT[iR];
+            rgb.g = sqrtLUT[iG];
+            rgb.b = sqrtLUT[iB];
+            
             hsv_color hsv = RGB2HCLnew(rgb);                            //to hsv
             //hsv.val = fastsqrt(hsv.val);
 
