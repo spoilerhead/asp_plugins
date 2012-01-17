@@ -19,6 +19,10 @@ unix {
 }
 }
 
+windows {
+    QMAKE_CXXFLAGS += /fp:fast /arch:SSE /Oi /Ot
+}
+
 #include(../SDK/current/examples/common/mac.pri)
 
 #macx {
