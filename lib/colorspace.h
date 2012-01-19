@@ -364,13 +364,6 @@ COLORSPACE_FASTLOCAL rgb_color HCL2RGB(const hsv_color hsv) {
 
 
 
-
-
-
-
-// HSL BROKEN  ==========================================================
-
-
 COLORSPACE_FASTLOCAL hsv_color RGB2HSL(rgb_color rgb) {
     hsv_color hsv;
     float rgb_min, rgb_max;

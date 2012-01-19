@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>257</width>
-    <height>256</height>
+    <height>274</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -1283,7 +1283,7 @@ p, li { white-space: pre-wrap; }
           </font>
          </property>
          <property name="text">
-          <string notr="true" extracomment="version info">Wavelet Sharpen 3 - T30 by Spoilerhead</string>
+          <string notr="true" extracomment="version info">Wavelet Sharpen 3 - T31 by Spoilerhead</string>
          </property>
         </widget>
        </item>
