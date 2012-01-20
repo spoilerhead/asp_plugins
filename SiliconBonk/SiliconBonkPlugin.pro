@@ -7,7 +7,7 @@ include(../lib/fastmathinclude.pri)
 VERSION = 0.1
 
 # Input
-HEADERS += FilterSiliconBonk.h SiliconBonkPlugin.h ../lib/colorspace.h ../lib/blend_modes.h ../lib/sqrtlut.h
+HEADERS += FilterSiliconBonk.h SiliconBonkPlugin.h ../lib/colorspace.h ../lib/blend_modes.h
 TRANSLATIONS = SiliconBonkPlugin_de.ts SiliconBonkPlugin_fr.ts SiliconBonkPlugin_it.ts SiliconBonkPlugin_ja.ts SiliconBonkPlugin_nl.ts
 RESOURCES += res.qrc
 
