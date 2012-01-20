@@ -1,6 +1,6 @@
 /*
  * by Dieter Steiner <spoilerhead@gmail.com>
- * (C) 2010-2011
+ * (C) 2010-2012
  * licensed: GPL v2+, other licenses  available on request
  */
 
@@ -17,6 +17,7 @@
 
 
 #include "sphTileCache.h"
+#include "sqrtlut.h"
 //Hacked up by Spoilerhead
 
 #define FilterName sphLayerFilter
@@ -158,21 +159,32 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
             
             uint16 *pIn = pixels.getPixel(wx,wy);   //Get address of Pixel
             
-            float r,g,b;
+            
+            uint16 iR,iG,iB;
             if(pIn != NULL) {
-            	r = to_workspace(*(pIn));
-		        g = to_workspace(*(pIn +  pw)) ;
-		        b = to_workspace(*(pIn + 2*pw));
+            	iR = *(pIn);
+		        iG = *(pIn +  pw);
+		        iB = *(pIn + 2*pw);
 		    } else { // give it a pretty average init :D
-      		    r = to_workspace(0x7fff);
-		        g = to_workspace(0x7fff);
-		        b = to_workspace(0x7fff);
+      		    iR = 0x7fff;
+		        iG = 0x7fff;
+		        iB = 0x7fff;
 		    }
 		    
+		    float r,g,b;            //use lut based conversion and deGamma
 		    switch(m_deGamma) {
-		    case GAMMA_ALL:     b = fastsqrt(b);
-		                        g = fastsqrt(g);
-		    case GAMMA_FIRST:   r = fastsqrt(r);
+		        case GAMMA_ALL:     r = sqrtLUT[iR];
+		                            g = sqrtLUT[iG];
+		                            b = sqrtLUT[iB];
+		                            break;
+		        case GAMMA_FIRST:   r = sqrtLUT[iR];
+                    		        g = to_workspace(iG);
+		                            b = to_workspace(iB);
+		                            break;
+		        default:            r = to_workspace(iR);
+		                            g = to_workspace(iG);
+		                            b = to_workspace(iB);
+		                            break;
 		    
 		    }
 		    
@@ -273,10 +285,10 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
 		    }
 		    
 		    switch(m_deGamma) {
-		    case GAMMA_ALL:     b *= b;
-		                        g *= g;
-		    case GAMMA_FIRST:   r *= r;
-		    
+		        case GAMMA_ALL:     b *= b;
+		                            g *= g;
+		        case GAMMA_FIRST:   r *= r;
+		        default:            break;
 		    }
 
             *(pOut)         = from_workspace(r); //R

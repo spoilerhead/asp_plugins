@@ -232,18 +232,18 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
               int iy = ((i/width)-padY)+tileY;  // absolute Y coordinate
               unsigned int id = ix+(iy<<16);    //pixel id
 
-              float grain = 0.0f;  //initialize
+              float grain = 0.0f;               //initialize
              
 
               for(int iter = 0; iter <iterations[c]; iter++ ) {
                 //unsigned int qh = mix(ix,iy,c+jenkins_hash(id+((seed)<<iter)));   //hash the pixel TODO: find a faster method
                 unsigned int qh = mNoise(ix,iy,c,seed<<iter);
-                grain += ((qh /4294967295.0f )-0.5f);                       //pseudorandom number -0.5..0.5
+                grain += ((qh *(1.f/4294967295.0f) )-0.5f);                         //pseudorandom number -0.5..0.5
               }
               grain /= iterations[c];
-              grain *=amount*(radius+1.0f);                                //boost strength
-              grain *=channelGain[c]; //channel specific gain
-              grain += 0.50f;                                               //move back to midpoint 0.5
+              grain *=amount*(radius+1.0f);                                         //boost strength
+              grain *=channelGain[c];                                               //channel specific gain
+              grain += 0.50f;                                                       //move back to midpoint 0.5
               
               //fimg[0][i]   = clip(grain,0.0f,1.0f);
               grainField[i] = grain;
@@ -256,8 +256,8 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
              //Blend the grain in
             for(int i = 0;i<(width*height);i++) {
               float blendlevel = clip((A*(fimg[0][i]*fimg[0][i])+B*fimg[0][i]+C),0.0f,1.0f);  //calculate alpha of the grainy image, based on the luminance
-              fimg[c][i] = fimg[c][i] + (grainField[i] -0.5f)*blendlevel;                //simply ADD the grain, this works better than overlay
-              fimg[c][i] = clip(fimg[c][i],0.0f,1.0f);                            //Clip
+              fimg[c][i] = fimg[c][i] + (grainField[i] -0.5f)*blendlevel;           //simply ADD the grain, this works better than overlay
+              fimg[c][i] = clip(fimg[c][i],0.0f,1.0f);                              //Clip
             }
         
         
