@@ -13,10 +13,9 @@
 #include <iostream>
 #include <cmath>
 
+#include "sqrtlut.h"
 
 
-
-//#include "rgb_to_hsv.h"
 #define FILTERNAME FatToniFilter
 
 #define FASTLOCAL static inline
@@ -195,9 +194,14 @@ void FILTERNAME::runLayer(const ImageSettings &options, const PipeSettings  &set
 			iR = *(pSrc)        ;
 			iG = *(pSrc + pw)   ;
 			iB = *(pSrc + 2*pw) ;
-            rgb.r = fastsqrt(I16TOF(iR));                                                 //to float space
-            rgb.g = fastsqrt(I16TOF(iG));
-            rgb.b = fastsqrt(I16TOF(iB));
+            //rgb.r = fastsqrt(I16TOF(iR));                                                 //to float space
+            //rgb.g = fastsqrt(I16TOF(iG));
+            //rgb.b = fastsqrt(I16TOF(iB));
+            
+            //lut based int to float and gamma
+            rgb.r = sqrtLUT[iR];
+            rgb.g = sqrtLUT[iG];
+            rgb.b = sqrtLUT[iB];
             
             float luma = (rgb.r+rgb.g+rgb.b)/3.f;//HCL_VAL(rgb); //pixel luminance
 			

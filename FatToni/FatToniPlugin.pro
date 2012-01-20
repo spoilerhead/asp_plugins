@@ -7,7 +7,7 @@ include(../lib/fastmathinclude.pri)
 VERSION = 0.1
 
 # Input
-HEADERS += FilterFatToni.h FatToniPlugin.h ../lib/colorspace.h ../lib/blend_modes.h
+HEADERS += FilterFatToni.h FatToniPlugin.h ../lib/colorspace.h ../lib/blend_modes.h ../lib/sqrtlut.h
 TRANSLATIONS = FatToniPlugin_de.ts FatToniPlugin_fr.ts FatToniPlugin_it.ts FatToniPlugin_ja.ts FatToniPlugin_nl.ts
 RESOURCES += res.qrc
 

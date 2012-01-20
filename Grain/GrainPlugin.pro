@@ -8,5 +8,5 @@ VERSION = 0.1
 # Input
 HEADERS += GrainFilter.h GrainPlugin.h
 FORMS += sph_grain.ui
-SOURCES += GrainFilter.cpp GrainPlugin.cpp ../lib/gauss_iir.cpp ../lib/sphLayerFilter.cpp
+SOURCES += GrainFilter.cpp GrainPlugin.cpp ../lib/gauss_iir.cpp ../lib/sphLayerFilter.cpp ../lib/sqrtlut.h
 TRANSLATIONS = GrainPlugin_de.ts GrainPlugin_fr.ts GrainPlugin_it.ts GrainPlugin_ja.ts GrainPlugin_nl.ts
