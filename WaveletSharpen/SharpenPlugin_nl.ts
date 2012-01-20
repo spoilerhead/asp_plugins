@@ -40,8 +40,9 @@
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="77"/>
-        <source>With of the Gradient (slow)</source>
-        <translation>Breedte van de gradiënt (langzaam)</translation>
+        <source>Width of the Gradient (slow)</source>
+        <oldsource>With of the Gradient (slow)</oldsource>
+        <translation type="unfinished">Breedte van de gradiënt (langzaam)</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="78"/>
@@ -118,14 +119,19 @@
         <translation>Wavelet 1</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1223"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1245"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1294"/>
+        <source>Deprecated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="1315"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1337"/>
         <source>DePepper</source>
         <translation>Ontpeperen</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1226"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1248"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1318"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1340"/>
         <source> S+P</source>
         <translation> Z&amp;P</translation>
     </message>
@@ -148,53 +154,53 @@
         <translation>Grad/USM</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="295"/>
-        <location filename="sph_wavelet_sharpen.ui" line="768"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1191"/>
+        <location filename="sph_wavelet_sharpen.ui" line="304"/>
+        <location filename="sph_wavelet_sharpen.ui" line="786"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1209"/>
         <source>Amount </source>
         <translation>Hoeveelheid </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="344"/>
-        <location filename="sph_wavelet_sharpen.ui" line="712"/>
-        <location filename="sph_wavelet_sharpen.ui" line="796"/>
+        <location filename="sph_wavelet_sharpen.ui" line="353"/>
+        <location filename="sph_wavelet_sharpen.ui" line="730"/>
+        <location filename="sph_wavelet_sharpen.ui" line="814"/>
         <source>Radius </source>
         <translation>Bereik </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="393"/>
+        <location filename="sph_wavelet_sharpen.ui" line="402"/>
         <source>Threshold </source>
         <translation>Drempelwaarde </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="436"/>
+        <location filename="sph_wavelet_sharpen.ui" line="445"/>
         <source>Strength</source>
         <translation>Sterkte</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="505"/>
+        <location filename="sph_wavelet_sharpen.ui" line="514"/>
         <source>Width/Iter</source>
         <translation>Breedte/Iter</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="564"/>
+        <location filename="sph_wavelet_sharpen.ui" line="573"/>
         <source>Microcontrast</source>
         <translation>Microcontrast</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="685"/>
+        <location filename="sph_wavelet_sharpen.ui" line="694"/>
         <source>Wavelet</source>
         <extracomment>Tab Title</extracomment>
         <translation>Wavelet</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="740"/>
-        <location filename="sph_wavelet_sharpen.ui" line="824"/>
+        <location filename="sph_wavelet_sharpen.ui" line="758"/>
+        <location filename="sph_wavelet_sharpen.ui" line="842"/>
         <source>Edge </source>
         <translation>Rand </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1256"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1230"/>
         <source>About...</source>
         <translation>Info...</translation>
     </message>

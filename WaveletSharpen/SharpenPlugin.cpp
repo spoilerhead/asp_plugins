@@ -74,7 +74,7 @@ bool SharpenPlugin::registerOptions()
     
 	m_hub->addBoolOption  (LLorensFilter::EnableLL, "bSphWaveletLLenable"            , "Gradient Enabled"  , tr("Enables Gradient Sharpening"), "WaveletSharpen2_LLorens_Filter", false, false, 0);
     m_hub->addIntOption   (LLorensFilter::LLStrength, "bSphWaveletLLStrength"        , "Gradient Strength" , tr("Gradient Sharpening Strength"), "WaveletSharpen2_LLorens_Filter", 30, 0, 0);
-    m_hub->addIntOption   (LLorensFilter::LLIter, "bSphWaveletLLiter"                , "Gradient Width"    , tr("With of the Gradient (slow)"), "WaveletSharpen2_LLorens_Filter", 3, 1, 0);
+    m_hub->addIntOption   (LLorensFilter::LLIter, "bSphWaveletLLiter"                , "Gradient Width"    , tr("Width of the Gradient (slow)"), "WaveletSharpen2_LLorens_Filter", 3, 1, 0);
     m_hub->addIntOption   (LLorensFilter::MCStrength, "bSphWaveletMCStrength"        , "Microcontrast"      , tr("Amount of Microcontrast to be added"), "WaveletSharpen2_LLorens_Filter", 0, 0, 0);
     
     

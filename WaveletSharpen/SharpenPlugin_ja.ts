@@ -40,8 +40,9 @@
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="77"/>
-        <source>With of the Gradient (slow)</source>
-        <translation>グレデーション (スロー)</translation>
+        <source>Width of the Gradient (slow)</source>
+        <oldsource>With of the Gradient (slow)</oldsource>
+        <translation type="unfinished">グレデーション (スロー)</translation>
     </message>
     <message>
         <location filename="SharpenPlugin.cpp" line="78"/>
@@ -118,14 +119,19 @@
         <translation>ウェーブレット 1</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1223"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1245"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1294"/>
+        <source>Deprecated</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="1315"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1337"/>
         <source>DePepper</source>
         <translation>ごま塩除去</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1226"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1248"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1318"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1340"/>
         <source> S+P</source>
         <translation> ごま塩</translation>
     </message>
@@ -148,53 +154,53 @@
         <translation>グラデーション/USM</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="295"/>
-        <location filename="sph_wavelet_sharpen.ui" line="768"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1191"/>
+        <location filename="sph_wavelet_sharpen.ui" line="304"/>
+        <location filename="sph_wavelet_sharpen.ui" line="786"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1209"/>
         <source>Amount </source>
         <translation>量 </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="344"/>
-        <location filename="sph_wavelet_sharpen.ui" line="712"/>
-        <location filename="sph_wavelet_sharpen.ui" line="796"/>
+        <location filename="sph_wavelet_sharpen.ui" line="353"/>
+        <location filename="sph_wavelet_sharpen.ui" line="730"/>
+        <location filename="sph_wavelet_sharpen.ui" line="814"/>
         <source>Radius </source>
         <translation>半径 </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="393"/>
+        <location filename="sph_wavelet_sharpen.ui" line="402"/>
         <source>Threshold </source>
         <translation>しきい値 </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="436"/>
+        <location filename="sph_wavelet_sharpen.ui" line="445"/>
         <source>Strength</source>
         <translation>強度</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="505"/>
+        <location filename="sph_wavelet_sharpen.ui" line="514"/>
         <source>Width/Iter</source>
         <translation>幅/反復子</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="564"/>
+        <location filename="sph_wavelet_sharpen.ui" line="573"/>
         <source>Microcontrast</source>
         <translation>マイクロコントラスト</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="685"/>
+        <location filename="sph_wavelet_sharpen.ui" line="694"/>
         <source>Wavelet</source>
         <extracomment>Tab Title</extracomment>
         <translation>ウェーブレット</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="740"/>
-        <location filename="sph_wavelet_sharpen.ui" line="824"/>
+        <location filename="sph_wavelet_sharpen.ui" line="758"/>
+        <location filename="sph_wavelet_sharpen.ui" line="842"/>
         <source>Edge </source>
         <translation>エッジ </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1256"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1230"/>
         <source>About...</source>
         <translation>製品情報...</translation>
     </message>
