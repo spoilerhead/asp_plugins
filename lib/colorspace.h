@@ -10,6 +10,7 @@
 
 #include <algorithm>
 #include "fastmath.h"
+#include "pstdint.h"
 
 
 #define COLORSPACE_FASTLOCAL static inline
@@ -48,6 +49,10 @@ typedef struct  {
 } rgb_color;
 
 typedef struct  {
+    int32_t r, g, b;    /* Channel intensities between 0.0 and 1.0 */
+} rgb_colorInt32;
+
+typedef struct  {
     float hue;        /* Hue degree between 0.0 and 360.0 */
     float sat;        /* Saturation between 0.0 (gray) and 1.0 */
     float val;        /* Value between 0.0 (black) and 1.0 */
@@ -63,6 +68,8 @@ COLORSPACE_FASTLOCAL float clipf (const float i, const float imin, const float i
 COLORSPACE_FASTLOCAL int clipi (const int i, const int imin, const int imax) {
   return std::max(std::min(imax,i),imin);
 }
+
+#define clampI(x) clipi((x),0,0xFFFF)
 
 /*
 inline void nullt (float *r, float *g, float *b)

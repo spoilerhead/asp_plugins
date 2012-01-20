@@ -203,41 +203,28 @@ void FILTERNAME::runLayer(const ImageSettings &options, const PipeSettings  &set
             rgb.g = sqrtLUT[iG];
             rgb.b = sqrtLUT[iB];
             
-            float luma = (rgb.r+rgb.g+rgb.b)/3.f;//HCL_VAL(rgb); //pixel luminance
-			
-			
-			float toneAlpha;// = luma;//(luma<0.5) ? ((luma)/(2*BLENDPOINT)) : (0.5f+(luma-BLENDPOINT)/(2*(1-BLENDPOINT)));
-			toneAlpha = clipf(luma+(optMid),0.f,1.f);
-			
-			toneAlpha = clipf(ContrastBerndFast(toneAlpha,0.5f*optMix),0.f,1.f);
-			//toneAlpha = clipf(  (((toneAlpha-0.5f)*(1.f+3.f*optMix))+0.5f),0.f,1.f);
+            //Compute position on the linear blend between the 2 tonings
+            float luma = (rgb.r+rgb.g+rgb.b)/3.f; //pixel luminance
+			float toneAlpha = clipf(luma+(optMid),0.f,1.f);
+			toneAlpha = clipf(ContrastBerndFast(toneAlpha,0.5f*optMix),0.f,1.f);    //Mix creates a harder "edge"
 
-            
-            //toning color for this pixel
+            //compute toning color for this pixel
 			rgb_color toning;
             toning.r = BLEND( hrgb.r, srgb.r, toneAlpha);
 			toning.g = BLEND( hrgb.g, srgb.g, toneAlpha);
 			toning.b = BLEND( hrgb.b, srgb.b, toneAlpha);
 
-			//Mix back a bit of b+w
-			/*toning.r = BLEND(toning.r, rgb.r, 0.75f+(0.25f*optCont));
-			toning.g = BLEND(toning.g, rgb.g, 0.75f+(0.25f*optCont));
-			toning.b = BLEND(toning.b, rgb.b, 0.75f+(0.25f*optCont));
-*/
-
-
-			
+            //actuall toning phase, blend between overlay and mix, overlay is a hard version, mix a soft one
 			rgb.r = BLEND ( OVERLAY( toning.r ,rgb.r), MIX( toning.r ,rgb.r),   optCont);
 			rgb.g = BLEND ( OVERLAY( toning.g ,rgb.g), MIX( toning.g ,rgb.g),   optCont);
 			rgb.b = BLEND ( OVERLAY( toning.b ,rgb.b), MIX( toning.b ,rgb.b),   optCont);
-	
-			
+
+            //Multiply with the base color	
             rgb.r = MULTIPLY(basergb.r, rgb.r);
 			rgb.g = MULTIPLY(basergb.g, rgb.g);
 			rgb.b = MULTIPLY(basergb.b, rgb.b);
-			
-			
-			
+		
+			//Back to float and degamma
 			iR = FTOI16(rgb.r*rgb.r);
 			iG = FTOI16(rgb.g*rgb.g);
 			iB = FTOI16(rgb.b*rgb.b);

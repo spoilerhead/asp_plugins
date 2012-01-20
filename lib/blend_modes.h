@@ -31,4 +31,19 @@
 #define MIX(fo,b) ((b)+((fo)-0.5f))
 
 
+//16 bit routines
+
+#define MULTIPLY16(f,b) (((f) * (b))>>16)
+#define SCREEN16(fo,b) ( 0xffff-MULTIPLY16((0xffff-(fo)),(0xffff- (b))) )
+//overlay maybe broken?
+//#define OVERLAY16(fo,b) ( MULTIPLY16((b) , SCREEN16((fo),(b))) + MULTIPLY16((0xffff - (b)) , MULTIPLY16((fo),(b))) )
+
+//#define OVERLAY16(fo,b) (((b < 0x8000) ? (2 * fo * b / 0xffff):(0xffff - 2 * (0xffff - fo) * (0xffff - b) / 0xffff)))
+
+
+
+#define BLEND16(fo,b,o) (MULTIPLY16((fo),(o)) + MULTIPLY16((b),(0xFFFF-(o))))
+
+#define MIX16(fo,b) (((b)+(fo)-0x8000))
+
 #endif
