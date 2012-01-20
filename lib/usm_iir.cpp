@@ -135,6 +135,41 @@ void USM_IIR (float *fimg, const unsigned int width, const unsigned int height,c
     iir_param iir;
     iir_init(&iir,radius);
    
+   
+    //blur row
+    for(row = 0; row < height; row++) { 
+        iir_filter(&iir,fimg+(row*width), width, 1);
+    }
+    //blur col
+    for(col = 0; col < width; col++) { 
+        iir_filter(&iir,fimg+col, height, width);
+    }
+}
+
+
+/*stacked version for larger radii*/
+void USM_IIR_stacked (float *fimg, const unsigned int width, const unsigned int height,const float radius, const float stackRadius)
+{
+    if(radius == 0.0f) return;
+    unsigned int col, row;
+    iir_param iir;
+   
+    
+    float remRadius = radius;
+    while(remRadius > stackRadius) {
+        iir_init(&iir,stackRadius);
+        //blur row
+        for(row = 0; row < height; row++) { 
+            iir_filter(&iir,fimg+(row*width), width, 1);
+        }
+        //blur col
+        for(col = 0; col < width; col++) { 
+            iir_filter(&iir,fimg+col, height, width);
+        }
+        remRadius -= stackRadius;
+    }
+
+    iir_init(&iir,remRadius);
     //blur row
     for(row = 0; row < height; row++) { 
         iir_filter(&iir,fimg+(row*width), width, 1);

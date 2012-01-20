@@ -26,7 +26,7 @@ using namespace std;
 
 #define FilterName USMFilter
 
-
+#define kernelsize 50.f //seems to work well, don't change unless nencessary, maybe need rebalance in additionalradius
 
 
 bool FilterName::needsToRunLayer(const ImageSettings &options, const PipeSettings  &settings, PluginOptionList  &layerOptions) const
@@ -58,14 +58,16 @@ bool FilterName::needsOriginalImage  ()
 	return true; //we only use the current tile
 }
 
+
+
 int FilterName::additionalRadius(PluginOptionList  *layerOptions,float zoomLevel) const
 {
     bool okay;
   	bool  enableUsm = layerOptions->getBool(EnableUSM, m_groupId, okay);
     float radiusUsm = layerOptions->getInt(RadiusUSM, m_groupId, okay)*zoomLevel;
 
- 	
-	float effRadius = (enableUsm?(radiusUsm*3.0f):0.0f);
+ 	//
+	float effRadius = (enableUsm?(min(radiusUsm,2.f*kernelsize)*3.0f):0.0f);
 	
     return effRadius;
 }
@@ -102,15 +104,33 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
     qDebug()<<name()<<"process: U: "<<" ru: "<<radiusUSM/zoomLevel<<" a: "<<amountUSM;
 	#endif
     
-    //if(enableUSM) 
+/*    int addrad =additionalRadius(&layerOptions,zoomLevel);
+    for(int x=0;x<=255;x++)
+    for(int y=0;y<=255;y++) {
+        int s = (x+2*addrad)*width+y+2*addrad;
+        int d = (x+addrad)*width+y+addrad;
+        fimg[0][d] = fimg[0][s];
+        
+    }*/
+    
+    
+   //if(0) 
     {
         //Process
        	#ifdef INSTRUMENTATION
         qDebug()<<name()<<"USM RUNNING"<<" ru: "<<radiusUSM<<" w: "<<width<<" h: "<<height;
         #endif
 
+    
+        //USM_IIR(fimg[0],width,height,radiusUSM);
+       /* while(radiusUSM>50.f)
+        {
+            USM_IIR(fimg[0],width,height,50.f);
+            radiusUSM -= 50.f;
+        }*/
 
-        USM_IIR(fimg[0],width,height,radiusUSM);
+//        USM_IIR(fimg[0],width,height,radiusUSM);
+        USM_IIR_stacked(fimg[0],width,height,radiusUSM,kernelsize);
 
         //Blend
         for(int i = 0;i<(width*height);i++) {
@@ -127,7 +147,8 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
           }
           
           //---
-          fimg[0][i] = clip(org[i] + diff,0.0f,1.0f); //USM step
+         fimg[0][i] = clip(org[i] + diff,0.0f,1.0f); //USM step
+
         }
     }
     

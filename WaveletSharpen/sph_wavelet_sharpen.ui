@@ -363,7 +363,7 @@
           <number>0</number>
          </property>
          <property name="maximum">
-          <number>50</number>
+          <number>250</number>
          </property>
          <property name="value">
           <number>5</number>
@@ -614,7 +614,7 @@
           <number>0</number>
          </property>
          <property name="maximum">
-          <number>50</number>
+          <number>250</number>
          </property>
          <property name="singleStep">
           <number>1</number>
@@ -1283,7 +1283,7 @@ p, li { white-space: pre-wrap; }
           </font>
          </property>
          <property name="text">
-          <string notr="true" extracomment="version info">Wavelet Sharpen 3 - T31 by Spoilerhead</string>
+          <string notr="true" extracomment="version info">Wavelet Sharpen 3 - T32 by Spoilerhead</string>
          </property>
         </widget>
        </item>
