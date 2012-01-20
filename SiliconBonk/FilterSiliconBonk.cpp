@@ -259,7 +259,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             rgb.g = fastsqrt2(rgb.g);
             rgb.b = fastsqrt2(rgb.b);
             */
-            //Use LUT lookup
+            //Use LUT lookup for int to float and gamma
             rgb.r = sqrtLUT[iR];
             rgb.g = sqrtLUT[iG];
             rgb.b = sqrtLUT[iB];
