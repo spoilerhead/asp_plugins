@@ -680,7 +680,7 @@
           <number>0</number>
          </property>
          <property name="maximum">
-          <number>250</number>
+          <number>200</number>
          </property>
          <property name="value">
           <number>5</number>
@@ -708,7 +708,7 @@
           <number>0</number>
          </property>
          <property name="maximum">
-          <number>250</number>
+          <number>200</number>
          </property>
          <property name="singleStep">
           <number>1</number>
@@ -1925,6 +1925,38 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>244</x>
      <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bSphWaveletSharpenClarity_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SphWaveletForm_bis</receiver>
+   <slot>setOption(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>bSphWaveletSharpenClarity2_checkbox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>SphWaveletForm_bis</receiver>
+   <slot>setOption(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>63</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>112</y>
     </hint>
    </hints>
   </connection>

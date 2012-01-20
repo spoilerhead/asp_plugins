@@ -173,7 +173,7 @@ void SharpenPlugin::handleControlChange(const QString &optionName, int groupId, 
 	if(
 	    changes.contains(WaveletSharpenFilter::Amount, m_groupId)
 	    || changes.contains(WaveletSharpenFilter::Radius, m_groupId)
-//	    || changes.contains(WaveletSharpenFilter::Blend, m_groupId)
+	    || changes.contains(WaveletSharpenFilter::Clarity, m_groupId)
 	    || changes.contains(WaveletSharpenFilter::DePepper, m_groupId)
 	    || changes.contains(WaveletSharpenFilter::Edges, m_groupId)
 	){
@@ -184,7 +184,7 @@ void SharpenPlugin::handleControlChange(const QString &optionName, int groupId, 
 	if(
 	    changes.contains(WaveletSharpenFilter::Amount2, m_groupId)
 	    || changes.contains(WaveletSharpenFilter::Radius2, m_groupId)
-//	    || changes.contains(WaveletSharpenFilter::Blend2, m_groupId)
+	    || changes.contains(WaveletSharpenFilter::Clarity2, m_groupId)
 	    || changes.contains(WaveletSharpenFilter::DePepper2, m_groupId)
 	    || changes.contains(WaveletSharpenFilter::Edges2, m_groupId)
 	){
