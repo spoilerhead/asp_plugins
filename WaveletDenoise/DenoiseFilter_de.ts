@@ -97,7 +97,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="sph_wavelet_denoise.ui" line="637"/>
-        <source>Wavelet Denoise 2 - T30 by Spoilerhead</source>
+        <source>Wavelet Denoise 2 - T31 by Spoilerhead</source>
+        <oldsource>Wavelet Denoise 2 - T30 by Spoilerhead</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

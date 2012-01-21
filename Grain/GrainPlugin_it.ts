@@ -4,55 +4,55 @@
 <context>
     <name>GrainPlugin</name>
     <message>
-        <location filename="GrainPlugin.cpp" line="49"/>
+        <location filename="GrainPlugin.cpp" line="53"/>
         <source>Enables Grain</source>
         <comment>Mouse over hint</comment>
         <translation>Abilita la grana</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="50"/>
+        <location filename="GrainPlugin.cpp" line="54"/>
         <source>Increases the Radius of the Blur filter</source>
         <comment>Mouse over hint</comment>
         <translation>Aumenta il raggio del filtro di sfocatura</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="51"/>
+        <location filename="GrainPlugin.cpp" line="55"/>
         <source>Random Seed</source>
         <comment>Mouse over hint</comment>
         <translation>Seme casuale</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="53"/>
+        <location filename="GrainPlugin.cpp" line="57"/>
         <source>Amount</source>
         <comment>Mouse over hint</comment>
         <translation>Valore</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="54"/>
+        <location filename="GrainPlugin.cpp" line="58"/>
         <source>Shadow Strength</source>
         <comment>Mouse over hint</comment>
         <translation>Intensità ombra</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="55"/>
+        <location filename="GrainPlugin.cpp" line="59"/>
         <source>Midtone Strength</source>
         <comment>Mouse over hint</comment>
         <translation>Intensità mezzitoni</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="56"/>
+        <location filename="GrainPlugin.cpp" line="60"/>
         <source>Lights Strength</source>
         <comment>Mouse over hint</comment>
         <translation>Intensità luci</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="57"/>
+        <location filename="GrainPlugin.cpp" line="61"/>
         <source>Randomize Seed</source>
         <comment>Mouse over hint</comment>
         <translation>Rende causale il seme</translation>
     </message>
     <message>
-        <location filename="GrainPlugin.cpp" line="58"/>
+        <location filename="GrainPlugin.cpp" line="62"/>
         <source>Colored Grain</source>
         <comment>Mouse over hint</comment>
         <translation>Grana colorata</translation>
@@ -92,27 +92,27 @@
         <translation>Seme</translation>
     </message>
     <message>
-        <location filename="sph_grain.ui" line="331"/>
+        <location filename="sph_grain.ui" line="340"/>
         <source>Lights</source>
         <translation>Punti luce</translation>
     </message>
     <message>
-        <location filename="sph_grain.ui" line="359"/>
+        <location filename="sph_grain.ui" line="368"/>
         <source>Midtones</source>
         <translation>Mezzitoni</translation>
     </message>
     <message>
-        <location filename="sph_grain.ui" line="387"/>
+        <location filename="sph_grain.ui" line="396"/>
         <source>Shadows</source>
         <translation>Ombreggiature</translation>
     </message>
     <message>
-        <location filename="sph_grain.ui" line="529"/>
+        <location filename="sph_grain.ui" line="547"/>
         <source>Random</source>
         <translation>Casuale</translation>
     </message>
     <message>
-        <location filename="sph_grain.ui" line="537"/>
+        <location filename="sph_grain.ui" line="555"/>
         <source>About...</source>
         <translation>Informazioni su...</translation>
     </message>

@@ -93,114 +93,123 @@
         <translation type="obsolete">Messa a fuoco Wavelet</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="64"/>
+        <location filename="sph_wavelet_sharpen.ui" line="127"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1283"/>
         <source>Gradient</source>
         <translation>Gradiente</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="83"/>
+        <location filename="sph_wavelet_sharpen.ui" line="96"/>
         <source>Enable Usm sharpening</source>
         <translation>Abilita messa a fuoco USM</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="89"/>
+        <location filename="sph_wavelet_sharpen.ui" line="102"/>
+        <location filename="sph_wavelet_sharpen.ui" line="505"/>
         <source>USM</source>
         <translation>USM</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="108"/>
-        <location filename="sph_wavelet_sharpen.ui" line="130"/>
+        <location filename="sph_wavelet_sharpen.ui" line="52"/>
+        <location filename="sph_wavelet_sharpen.ui" line="74"/>
         <source>Enable Wavelet sharpening</source>
         <translation>Abilita messa a fuoco Wavelet</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="111"/>
+        <location filename="sph_wavelet_sharpen.ui" line="55"/>
+        <location filename="sph_wavelet_sharpen.ui" line="531"/>
         <source>Wavelet 1</source>
         <translation>Wavelet 1</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1294"/>
-        <source>Deprecated</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1315"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1337"/>
+        <location filename="sph_wavelet_sharpen.ui" line="646"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1334"/>
         <source>DePepper</source>
         <translation>Rimuovi disturbo Pepe</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1318"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1340"/>
+        <location filename="sph_wavelet_sharpen.ui" line="649"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1337"/>
         <source> S+P</source>
         <translation> S+P</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="133"/>
+        <location filename="sph_wavelet_sharpen.ui" line="77"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1276"/>
         <source>Wavelet 2</source>
         <translation>Wavelet 2</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="168"/>
-        <location filename="sph_wavelet_sharpen.ui" line="187"/>
-        <location filename="sph_wavelet_sharpen.ui" line="206"/>
+        <location filename="sph_wavelet_sharpen.ui" line="207"/>
+        <source>USM/Wavelet 1</source>
+        <extracomment>Tab Title, keep the order please</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="498"/>
+        <location filename="sph_wavelet_sharpen.ui" line="524"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1315"/>
         <source>Clarity Mode</source>
         <translation>Modalità Chiarezza</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="257"/>
         <source>Grad/USM</source>
         <extracomment>Tab Title, keep the order please</extracomment>
-        <translation>Grado/USM</translation>
+        <translation type="obsolete">Grado/USM</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="304"/>
-        <location filename="sph_wavelet_sharpen.ui" line="786"/>
-        <location filename="sph_wavelet_sharpen.ui" line="1209"/>
+        <location filename="sph_wavelet_sharpen.ui" line="243"/>
+        <location filename="sph_wavelet_sharpen.ui" line="577"/>
+        <location filename="sph_wavelet_sharpen.ui" line="853"/>
         <source>Amount </source>
         <translation>Valore </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="353"/>
-        <location filename="sph_wavelet_sharpen.ui" line="730"/>
-        <location filename="sph_wavelet_sharpen.ui" line="814"/>
+        <location filename="sph_wavelet_sharpen.ui" line="299"/>
+        <location filename="sph_wavelet_sharpen.ui" line="679"/>
+        <location filename="sph_wavelet_sharpen.ui" line="900"/>
         <source>Radius </source>
         <translation>Raggio </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="402"/>
+        <location filename="sph_wavelet_sharpen.ui" line="759"/>
         <source>Threshold </source>
         <translation>Soglia </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="445"/>
+        <location filename="sph_wavelet_sharpen.ui" line="817"/>
+        <source>Wavelet 2/Grad</source>
+        <extracomment>Tab Title</extracomment>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="sph_wavelet_sharpen.ui" line="987"/>
         <source>Strength</source>
         <translation>Intensità</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="514"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1046"/>
         <source>Width/Iter</source>
         <translation>Larghezza/Iter</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="573"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1111"/>
         <source>Microcontrast</source>
         <translation>Microcontrasto</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="694"/>
         <source>Wavelet</source>
         <extracomment>Tab Title</extracomment>
-        <translation>Wavelet</translation>
+        <translation type="obsolete">Wavelet</translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="758"/>
-        <location filename="sph_wavelet_sharpen.ui" line="842"/>
+        <location filename="sph_wavelet_sharpen.ui" line="271"/>
+        <location filename="sph_wavelet_sharpen.ui" line="944"/>
         <source>Edge </source>
         <translation>Bordo </translation>
     </message>
     <message>
-        <location filename="sph_wavelet_sharpen.ui" line="1230"/>
+        <location filename="sph_wavelet_sharpen.ui" line="1345"/>
         <source>About...</source>
         <translation>Informazioni su...</translation>
     </message>
