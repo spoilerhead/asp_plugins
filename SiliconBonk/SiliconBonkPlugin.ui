@@ -297,6 +297,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
          <property name="maximum">
           <number>360</number>
          </property>
@@ -315,6 +318,9 @@
            <width>56</width>
            <height>16</height>
           </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="minimum">
           <number>-100</number>
@@ -385,6 +391,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
          <property name="minimum">
           <number>-50</number>
          </property>
@@ -429,6 +438,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -468,6 +480,9 @@
            <width>56</width>
            <height>16</height>
           </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="maximum">
           <number>200</number>
@@ -670,6 +685,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -691,6 +709,9 @@
            <width>56</width>
            <height>16</height>
           </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="minimum">
           <number>-100</number>
@@ -714,6 +735,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -735,6 +759,9 @@
            <width>56</width>
            <height>16</height>
           </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="minimum">
           <number>-100</number>
@@ -758,6 +785,9 @@
            <height>16</height>
           </size>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
          <property name="minimum">
           <number>-100</number>
          </property>
@@ -779,6 +809,9 @@
            <width>56</width>
            <height>16</height>
           </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
          </property>
          <property name="minimum">
           <number>-100</number>
