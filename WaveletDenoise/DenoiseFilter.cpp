@@ -106,7 +106,7 @@ static inline void edgeMaskB(float *fimg, float *fimgG,float *buf1,float *buf2,c
         
     for(int i = 0; i<(width*height);i++) {  //create hard edges
         //qDebug()<<gradX[i]<<"  "<<fsgn(gradX[i]);
-        fimgG[i] = hardT(boost*fastsqrt/*sqrtf*/(gradX[i]*gradX[i]+gradY[i]*gradY[i]), gradTres);
+        fimgG[i] = hardT(boost*fastsqrt2/*sqrtf*/(gradX[i]*gradX[i]+gradY[i]*gradY[i]), gradTres);
     }
     
 }
