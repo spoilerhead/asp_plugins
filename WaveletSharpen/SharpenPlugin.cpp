@@ -42,7 +42,7 @@ bool SharpenPlugin::registerFilters()
 
 
 	USMFilter *usm = new USMFilter(m_hub, m_groupId);
-	if (m_hub->addFilter(usm, PluginHub::Before, QString("RgbToLab"))) {
+	if (m_hub->addFilter(usm, PluginHub::Before, QString("Sharpen"))) {
         qDebug() << "Successfully registered "<<usm->name()<<" filter";
 	} else {
     	qDebug() << "Failed to register "<<usm->name()<<" filter";
