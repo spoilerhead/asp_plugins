@@ -204,7 +204,7 @@
      </property>
      <widget class="QWidget" name="USMTab">
       <attribute name="title">
-       <string extracomment="Tab Title, keep the order please">USM/Wavelet 1</string>
+       <string extracomment="Tab Title, keep the order please, keep it short">Wavelet 1/USM</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_4">
        <property name="leftMargin">
@@ -814,7 +814,7 @@
      </widget>
      <widget class="QWidget" name="WaveTab">
       <attribute name="title">
-       <string extracomment="Tab Title">Wavelet 2/Grad</string>
+       <string extracomment="Tab Title, keep the order please, keep it short">Wavelet 2/Grad</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
        <property name="leftMargin">
@@ -1398,7 +1398,7 @@ p, li { white-space: pre-wrap; }
           </font>
          </property>
          <property name="text">
-          <string notr="true" extracomment="version info">Wavelet Sharpen 3 - T33 by Spoilerhead</string>
+          <string notr="true" extracomment="version info">Wavelet Sharpen 3 - T34 by Spoilerhead</string>
          </property>
         </widget>
        </item>
