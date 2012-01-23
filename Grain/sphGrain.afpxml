@@ -1,6 +1,6 @@
 <!DOCTYPE PropertyScribe>
 <PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
-    <PluginFileData identifier="sph.grain" website="http://web.student.tuwien.ac.at/~e0326004/asp/" windowsLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Grain/release/GrainPlugin0.dll" resourcesPath="" macLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Grain/mac/libGrainPlugin.dylib" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Grain/libGrainPlugin.so" author="Spoilerhead" minorVersion="30" bugfixVersion="0" name="Grain" majorVersion="0" sdkVersion="8" dataVersion="1">
+    <PluginFileData identifier="sph.grain" website="http://web.student.tuwien.ac.at/~e0326004/asp/" windowsLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Grain/release/GrainPlugin0.dll" resourcesPath="" macLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Grain/mac/libGrainPlugin.dylib" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Grain/libGrainPlugin.so" author="Spoilerhead" minorVersion="31" bugfixVersion="0" name="Grain" majorVersion="0" sdkVersion="8" dataVersion="1">
         <StringList name="uiFiles">
             <li>/home/spoilerhead/code/ASP_Plugins/repo/Grain/sph_grain.ui</li>
         </StringList>
