@@ -719,9 +719,9 @@ COLORSPACE_FASTLOCAL void lab2rgb (float *l, float *a, float *b)
       z = (116.f * z - 16.f) * (27.f / 24389.f);
 
     /* white reference */
-    *l = x * 0.95047f;
+    *l = x * 0.96422f;
     *a = y;
-    *b = z * 1.08883f;
+    *b = z * 0.82521f;
 
   xyz2rgb(l,a,b);
 }
@@ -734,10 +734,10 @@ COLORSPACE_FASTLOCAL void rgb2lab (float *r, float *g, float *b)
   rgb2xyz(r,g,b);
 
     /* reference white */
-    *r *= (1.f/0.95047f);
+    *r *= (1.f/0.96422f);
     /* (just for completeness)
     *g /= 1.00000; */
-    *b *= (1.f/1.08883f);
+    *b *= (1.f/0.82521f);
 
     /* scale */
     if (*r > (216.f / 24389.0f)) {
