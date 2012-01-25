@@ -367,7 +367,7 @@
           <number>-50</number>
          </property>
          <property name="maximum">
-          <number>100</number>
+          <number>200</number>
          </property>
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
@@ -398,7 +398,7 @@
           <number>-50</number>
          </property>
          <property name="maximum">
-          <number>100</number>
+          <number>200</number>
          </property>
         </widget>
        </item>
@@ -1010,7 +1010,7 @@ p, li { white-space: pre-wrap; }
           <string notr="true"/>
          </property>
          <property name="text">
-          <string notr="true" extracomment="version info">Silicon Bonk - T32 by Spoilerhead</string>
+          <string notr="true" extracomment="version info">Silicon Bonk - T33 by Spoilerhead</string>
          </property>
         </widget>
        </item>

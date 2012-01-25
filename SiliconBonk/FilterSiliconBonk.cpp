@@ -144,6 +144,10 @@ float FASTLOCAL ContrastBernd(const float val, const float c) {
     return val-((c+0.5f)/4.4f-0.1f)*SIN(2*M_PI*val);
 }
 
+float FASTLOCAL LinearContrast(const float val, const float c) {
+    return ((val-0.5f)*c)+0.5f; //linear contrast
+}
+
 // needs precomputed factor
 float FASTLOCAL ContrastBerndFast(const float val, const float c) {
     return val-c*SIN(2*M_PI*val);
@@ -197,7 +201,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
 	
 	uint16 iR,iG,iB;
 	bool okay;
-	float optL, optH,optContrast,optMid,optSat;
+	float optL, optH,optContrast,optMid,optSat, optLinearContrast;
 	bool optHighlights;
 	const int numBands = 6;
 	int optEQ[numBands];
@@ -212,7 +216,17 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
 	optL = layerOptions.getInt(L, m_groupId, okay);
     float optLmod = paramLtoValue(optL);
     
+    
+    //read contrast, slit into sinusoidal and linear contrast
 	optContrast = layerOptions.getInt(Contrast, m_groupId, okay)/100.f;
+	if(optContrast >1.f) {
+	    optLinearContrast = 1.f+(3.f*(optContrast-1.f)); //-1 to get everything > 1, +1 as +1 is equivalent to 0 (do nothing) x3.. boost
+	    optContrast = 1.f;
+	} else {
+    	optLinearContrast = (1.f+0.f);
+    }
+	
+	
 	optContrast = precomputeContrastFactor(optContrast);//precompute
 
 	optMid = layerOptions.getInt(Mid, m_groupId, okay)/100.f;
@@ -297,7 +311,9 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             
             
             valNew = MidPoint(valNew,optMid);                                   //midpoint adjustment
+             
             valNew = ContrastBerndFast(clipf(valNew,0.f,1.f),optContrast);                     //contrast (bernds method
+            valNew = LinearContrast(valNew,optLinearContrast); //linear contrast
             
             hsv.val = valNew;                                                   //apply and set colors to 0
             hsv.sat *= optSat;

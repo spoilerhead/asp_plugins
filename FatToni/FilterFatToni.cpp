@@ -213,6 +213,22 @@ void FILTERNAME::runLayer(const ImageSettings &options, const PipeSettings  &set
             toning.r = BLEND( hrgb.r, srgb.r, toneAlpha);
 			toning.g = BLEND( hrgb.g, srgb.g, toneAlpha);
 			toning.b = BLEND( hrgb.b, srgb.b, toneAlpha);
+			
+			/* test mid toning for grubernd rgb_color mrgb;
+			mrgb.r = 1.0;
+			mrgb.g=0.5f;
+			mrgb.b=0.5f;
+			
+			
+			toning.r = BLEND( hrgb.r, srgb.r, toneAlpha);
+			toning.g = BLEND( hrgb.g, srgb.g, toneAlpha);
+			toning.b = BLEND( hrgb.b, srgb.b, toneAlpha);
+			
+			toning.r = BLEND( mrgb.r, toning.r, 1.f-2.f*abs((toneAlpha-0.5f)));
+			toning.g = BLEND( mrgb.g, toning.g, 1.f-2.f*abs((toneAlpha-0.5f)));
+			toning.b = BLEND( mrgb.b, toning.b, 1.f-2.f*abs((toneAlpha-0.5f)));*/
+
+			//--------------------------------
 
             //actuall toning phase, blend between overlay and mix, overlay is a hard version, mix a soft one
 			rgb.r = BLEND ( OVERLAY( toning.r ,rgb.r), MIX( toning.r ,rgb.r),   optCont);
@@ -223,7 +239,7 @@ void FILTERNAME::runLayer(const ImageSettings &options, const PipeSettings  &set
             rgb.r = MULTIPLY(basergb.r, rgb.r);
 			rgb.g = MULTIPLY(basergb.g, rgb.g);
 			rgb.b = MULTIPLY(basergb.b, rgb.b);
-		
+
 			//Back to float and degamma
 			iR = FTOI16(rgb.r*rgb.r);
 			iG = FTOI16(rgb.g*rgb.g);

@@ -718,7 +718,7 @@ COLORSPACE_FASTLOCAL void lab2rgb (float *l, float *a, float *b)
     else
       z = (116.f * z - 16.f) * (27.f / 24389.f);
 
-    /* white reference */
+    /* white reference D50 */
     *l = x * 0.96422f;
     *a = y;
     *b = z * 0.82521f;
