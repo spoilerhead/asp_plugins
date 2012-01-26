@@ -220,7 +220,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
     //read contrast, slit into sinusoidal and linear contrast
 	optContrast = layerOptions.getInt(Contrast, m_groupId, okay)/100.f;
 	if(optContrast >1.f) {
-	    optLinearContrast = 1.f+(2.f*(optContrast-1.f)); //-1 to get everything > 1, +1 as +1 is equivalent to 0 (do nothing) x2.. boost
+	    optLinearContrast = 1.f+(2.f*(optContrast-1.f)*(optContrast-1.f)); //-1 to get everything > 1, +1 as +1 is equivalent to 0 (do nothing) x2.. boost, square to get a move even contrast change
 	    optContrast = 1.f;
 	} else {
     	optLinearContrast = (1.f+0.f);
