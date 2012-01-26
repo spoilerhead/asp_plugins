@@ -231,18 +231,15 @@ void FILTERNAME::runLayer(const ImageSettings &options, const PipeSettings  &set
 			//--------------------------------
 
             //actuall toning phase, blend between overlay and mix, overlay is a hard version, mix a soft one
-			rgb.r = BLEND ( OVERLAY( toning.r ,rgb.r), MIX( toning.r ,rgb.r),   optCont);
-			rgb.g = BLEND ( OVERLAY( toning.g ,rgb.g), MIX( toning.g ,rgb.g),   optCont);
-			rgb.b = BLEND ( OVERLAY( toning.b ,rgb.b), MIX( toning.b ,rgb.b),   optCont);
+			rgb.r = BLEND ( OVERLAY( toning.r ,rgb.r), clipf(MIX( toning.r ,rgb.r),0.f,1.f),   optCont); //clip to avoid underflowing!
+			rgb.g = BLEND ( OVERLAY( toning.g ,rgb.g), clipf(MIX( toning.g ,rgb.g),0.f,1.f),   optCont);
+			rgb.b = BLEND ( OVERLAY( toning.b ,rgb.b), clipf(MIX( toning.b ,rgb.b),0.f,1.f),   optCont);
 
             //Multiply with the base color	
             rgb.r = MULTIPLY(basergb.r, rgb.r);
 			rgb.g = MULTIPLY(basergb.g, rgb.g);
 			rgb.b = MULTIPLY(basergb.b, rgb.b);
-
-            rgb.r = clipf(rgb.r,0.f,1.f);
-            rgb.g = clipf(rgb.g,0.f,1.f);
-            rgb.b = clipf(rgb.b,0.f,1.f);
+            
                         
 			//Back to float and degamma
     		iR = FTOI16(rgb.r*rgb.r);
