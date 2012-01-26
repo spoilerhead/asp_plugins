@@ -116,7 +116,7 @@ QList<QWidget*> GelatinPlugin::toolWidgets()
 {
 	return QList<QWidget*>();
 }
-
+#include <QAbstractItemView>
 void GelatinPlugin::toolWidgetCreated(QWidget *uiWidget)
 {
     //Q_UNUSED(uiWidget);
@@ -127,15 +127,23 @@ void GelatinPlugin::toolWidgetCreated(QWidget *uiWidget)
 		// Find the combo box, it is named "flipper"
 		if (QComboBox *combo = uiWidget->findChild<QComboBox*>("GelatinPaper_combo")) {
             fillPaperCombo(combo);
+            combo->view()->setFixedWidth(250);
+             combo->view()->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
 		}
 		if (QComboBox *combo = uiWidget->findChild<QComboBox*>("GelatinDeveloper_combo")) {
             fillDeveloperCombo(combo);
+            combo->view()->setFixedWidth(250);
+             combo->view()->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
 		}
 		if (QComboBox *combo = uiWidget->findChild<QComboBox*>("GelatinFilmStock_combo")) {
             fillFilmStockCombo(combo);
+             combo->view()->setFixedWidth(250);
+             combo->view()->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
 		}
 		if (QComboBox *combo = uiWidget->findChild<QComboBox*>("GelatinColorFilter_combo")) {
             fillColorFiltersCombo(combo);
+            combo->view()->setFixedWidth(250);
+             combo->view()->setSizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
 		}
 
 	}
