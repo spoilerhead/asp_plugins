@@ -240,8 +240,12 @@ void FILTERNAME::runLayer(const ImageSettings &options, const PipeSettings  &set
 			rgb.g = MULTIPLY(basergb.g, rgb.g);
 			rgb.b = MULTIPLY(basergb.b, rgb.b);
 
+            rgb.r = clipf(rgb.r,0.f,1.f);
+            rgb.g = clipf(rgb.g,0.f,1.f);
+            rgb.b = clipf(rgb.b,0.f,1.f);
+                        
 			//Back to float and degamma
-			iR = FTOI16(rgb.r*rgb.r);
+    		iR = FTOI16(rgb.r*rgb.r);
 			iG = FTOI16(rgb.g*rgb.g);
 			iB = FTOI16(rgb.b*rgb.b);
 			
