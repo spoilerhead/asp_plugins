@@ -89,61 +89,15 @@ QList<PluginDependency*> FILTERNAME::prerequisites(const ImageSettings  &options
 	return QList<PluginDependency*>();	//	Empty list - we don't depend on any other tiles.
 }
 
-
-/*float FASTLOCAL fastsin(float x) {
-    //always wrap input angle to -PI..PI
-    if (x < -M_PI)
-        x += 2.f*M_PI;
-    else if (x >  M_PI)
-        x -= 2.f*M_PI;
-
-    //compute sine
-    if (x < 0.f)
-        return (1.27323954f + 0.405284735f * x) * x;
-    else
-        return (1.27323954f - 0.405284735f * x) * x;
-}
-
-float FASTLOCAL fastcos(float x) {
-    x += M_PI/2.f;
-    return fastsin(x);
-}
-
-//looks good, but the error is a bit high
-float FASTLOCAL fastatan2(const float y, const float x)
-{
-   float  angle;
-   const float coeff_1 = M_PI/4.f;
-   const float coeff_2 = 3.f*coeff_1;
-   float abs_y = fabsf(y)+1e-10;      // kludge to prevent 0/0 condition
-   if (x>=0.f)
-   {
-      float r = (x - abs_y) / (x + abs_y);
-      angle = coeff_1 - coeff_1 * r;
-   }
-   else
-   {
-      float r = (x + abs_y) / (abs_y - x);
-      angle = coeff_2 - coeff_1 * r;
-   }
-
-
-   if (y < 0.f)
-           return(-angle);     // negate if in quad III or IV
-   else
-           return(angle);
-}*/
-
 //redefine here for faster versions
 
 #define SIN fastsin
 #define COS fastcos
-#define ATAN2 fastatan2
 
-float FASTLOCAL ContrastBernd(const float val, const float c) {
+/*float FASTLOCAL ContrastBernd(const float val, const float c) {
     return val-((c+0.5f)/4.4f-0.1f)*SIN(2*M_PI*val);
 }
-
+*/
 float FASTLOCAL LinearContrast(const float val, const float c) {
     return ((val-0.5f)*c)+0.5f; //linear contrast
 }
@@ -262,29 +216,16 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
 			iR = *(pSrc)        ;
 			iG = *(pSrc + pw)   ;
 			iB = *(pSrc + 2*pw) ;
-            
-            /*
-            rgb.r = I16TOF(iR);                                                 //to float space
-            rgb.g = I16TOF(iG);
-            rgb.b = I16TOF(iB);
-            
-            //simple correction (modify color, do inverse to opposite --------------------------
-            rgb.r = fastsqrt2(rgb.r);
-            rgb.g = fastsqrt2(rgb.g);
-            rgb.b = fastsqrt2(rgb.b);
-            */
-            //Use LUT lookup
+
+            //Use LUT lookup, int to float and gamma2 at the same time
             rgb.r = sqrtLUT[iR];
             rgb.g = sqrtLUT[iG];
             rgb.b = sqrtLUT[iB];
             
             hsv_color hsv = RGB2HCLnew(rgb);                            //to hsv
-            //hsv.val = fastsqrt(hsv.val);
 
             float alpha = (COS((hsv.hue-optH)*(2.f*M_PI)))*.5f;                 //cosinal hue difference
-            //alpha *= pow(hsv.sat,0.4f);                                       //effect scales with saturation
             alpha *= clipf(hsv.sat*(2.f-hsv.sat),0.f,1.f);                                     //effect scales with saturation, quadratic curve
-            //alpha = clipf(alpha,0.f,1.f);
             float valMod = optLmod*hsv.val;                                     //modified liminance value
             float valNew = BLEND(valMod,hsv.val,alpha);                         //blend depending on alpha
             
@@ -298,6 +239,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
                 float alphaEQ   = clipf(hsv.sat*(2.f-hsv.sat),0.f,1.f);        //effect scales with saturation, quadratic curve
                 float valModEQ    = newL*valNew;                //modified liminance value
                 valNew    = BLEND(valModEQ,valNew,alphaEQ);     //blend depending on alpha
+                //hsv.sat= clipf(BLEND(newL*hsv.sat,hsv.sat,alphaEQ),0.f,1.f);
        
             }
             //===== END TEST ============================
@@ -307,7 +249,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             //if(optHighlights) valNew = (-0.2782f*valNew+1.191f)*valNew;                           //prevent highlight blowout. quickly fitted in matalb
             //x = 0    0.1000    0.2000    0.3000    0.4000    0.5000    0.6000    0.7000    0.8000    0.9000    1.0000
             //yn = 0.0400    0.1200    0.2100    0.3050    0.4020    0.5010    0.6100    0.6900    0.7700    0.8400    0.9100
-            if(optHighlights) valNew = (((-0.4481f*valNew)+0.5489f)*valNew+0.7659f)*valNew+0.03891f;                           //prevent highlight blowout. quickly fitted in matalb
+            if(optHighlights) valNew = (((-0.4481f*valNew)+0.5489f)*valNew+0.7659f)*valNew+0.03891f;   //prevent highlight blowout. quickly fitted in matalb
             
             
             valNew = MidPoint(valNew,optMid);                                   //midpoint adjustment
@@ -317,12 +259,7 @@ void FILTERNAME::runLayer(const ImageSettings  &options, const PipeSettings  &se
             
             hsv.val = valNew;                                                   //apply and set colors to 0
             hsv.sat *= optSat;
-            //hsv.sat = min(hsv.sat,1.f);
-            //hsv.hue = 0.0f;
-            //hsv.sat *=0.5f;
-            
             hsv.val = clipf(hsv.val,0.f,1.f);
-            //hsv.val *= hsv.val;
             rgb = HCLnew2RGB(hsv);
             
             rgb.r = clipf(rgb.r,0.f,1.f);
