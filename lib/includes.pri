@@ -1,9 +1,9 @@
 TEMPLATE = lib
-TARGET = 
 DEPENDPATH += .
 
 # This is used in the source - use the TargetVersion.h file
 DEFINES += TARGET_VERSION=$$VERSION
+HEADERS += TargetVersion.h
 
 
 # we are including local header files
@@ -17,6 +17,7 @@ INCLUDEPATH += ../Plugin ../SDK/Plugin ../SDK ../../SDK/current/Plugin ../lib
 mac {
     include( mac.pri )
     include( Release.xcconfig )
+    #TODO: add optimzed MAC compiler flags!
 }
 
 
