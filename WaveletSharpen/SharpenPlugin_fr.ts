@@ -141,8 +141,9 @@
     </message>
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="207"/>
-        <source>USM/Wavelet 1</source>
-        <extracomment>Tab Title, keep the order please</extracomment>
+        <source>Wavelet 1/USM</source>
+        <oldsource>USM/Wavelet 1</oldsource>
+        <extracomment>Tab Title, keep the order please, keep it short</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -179,7 +180,7 @@
     <message>
         <location filename="sph_wavelet_sharpen.ui" line="817"/>
         <source>Wavelet 2/Grad</source>
-        <extracomment>Tab Title</extracomment>
+        <extracomment>Tab Title, keep the order please, keep it short</extracomment>
         <translation type="unfinished"></translation>
     </message>
     <message>

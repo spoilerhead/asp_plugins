@@ -2,55 +2,45 @@ TEMPLATE = lib
 TARGET = 
 DEPENDPATH += .
 
-!mac {
-    INCLUDEPATH += . ../../SDK/current/Plugin ../lib
-}
+# This is used in the source - use the TargetVersion.h file
+DEFINES += TARGET_VERSION=$$VERSION
+
+
+# we are including local header files
+INCLUDEPATH += .
+
+# we are including the ASP SDK headers from various locations where they may be
+DEPENDPATH += ../Plugin ../SDK/Plugin ../SDK ../../SDK/current/Plugin ../lib
+INCLUDEPATH += ../Plugin ../SDK/Plugin ../SDK ../../SDK/current/Plugin ../lib
+
+# include mac build defines only on mac. These are from the SDK in the /common directory and are required for mac compiles - Please include these in your project for mac builds.
 mac {
-    INCLUDEPATH += . ../../Plugin ../lib ../newSDK
-    include ( ../common/mac.pri )
+    include( mac.pri )
+    include( Release.xcconfig )
 }
+
+
 unix {
 !mac {
-	unix:QMAKE_CFLAGS +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2 -pipe
-	unix:QMAKE_CXXFLAGS +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2  -pipe
-	unix:QMAKE_LFLAGS +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2 -L /usr/lib32 -pipe
+	unix:QMAKE_CFLAGS   +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2 -pipe
+	unix:QMAKE_CXXFLAGS +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2 -pipe
+#	unix:QMAKE_LFLAGS   +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2 /usr/lib32 -pipe
+    unix:QMAKE_LFLAGS   +=  -fPIC -Wall -O2  -mfpmath=sse -mtune=amdfam10 -msse2 -pipe
 	CONFIG += x86
 	unix:LIBS += -L/usr/lib32
 }
 }
 
-#fast math, SSE2, faster over size, optimization
+# SSE2, faster over size, optimization
 windows {
-    QMAKE_CXXFLAGS += /fp:fast /arch:SSE2 /Oi /Ot
+    QMAKE_CXXFLAGS += /arch:SSE2 /Oi /Ot
 }
 
-#include(../SDK/current/examples/common/mac.pri)
 
-#macx {
-#
-#	SOURCES += "Release (Universal).xcconfig"
-#        QMAKE_CXXFLAGS += -faltivec
-#        QMAKE_CFLAGS += -faltivec
-#        QMAKE_CFLAGS_WARN_ON = -Wswitch -Wmissing-braces -Wreturn-type -Wparentheses
-#        QMAKE_CFLAGS_WARN_ON += -Wunused-label -Wunused-value -Wunused-variable
 
-#       QMAKE_CXXFLAGS_WARN_ON = $$QMAKE_CFLAGS_WARN_ON -Wnon-virtual-dtor -Woverloaded-virtual
-#   	QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.4
-#   	QMAKE_MAC_SDK=/Developer/SDKs/MacOSX10.5.sdk
-
-#}
-
-#jknights
-macx {
-	QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.4
-	QMAKE_MAC_SDK=/Developer/SDKs/MacOSX10.5.sdk
-	
-	
-}
 
 CONFIG(debug,debug|release) {
 	message( debug )
-
 	UI_DIR		=	builddir/objects/debug/ui
 	MOC_DIR		=	builddir/objects/debug/moc
 	OBJECTS_DIR	=	builddir/objects/debug/obj
@@ -61,7 +51,6 @@ CONFIG(debug,debug|release) {
 
 CONFIG(release,debug|release) {
 	message( release )
-
 	UI_DIR		=	builddir/objects/release/ui
 	MOC_DIR		=	builddir/objects/release/moc
 	OBJECTS_DIR	=	builddir/objects/release/obj
