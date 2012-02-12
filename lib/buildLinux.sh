@@ -11,4 +11,4 @@ qmake -spec ../../QT/current/Desktop/Qt/474/gcc/mkspecs/linux-g++-32
 
 #sed -i -e "s#-L/usr/lib/x86_64-linux-gnu#-L/opt/AfterShotPro/lib  -L/usr/lib/x86_64-linux-gnu#g" Makefile
 #do the build
-make
+make -j8
