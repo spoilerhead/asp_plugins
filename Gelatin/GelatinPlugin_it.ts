@@ -45,47 +45,47 @@
     </message>
     <message>
         <location filename="GelatinPlugin.ui" line="203"/>
-        <location filename="GelatinPlugin.ui" line="376"/>
+        <location filename="GelatinPlugin.ui" line="412"/>
         <source>Paper</source>
         <translation>Carta</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="257"/>
+        <location filename="GelatinPlugin.ui" line="293"/>
         <source>Tweaks</source>
         <translation>Modifiche</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="269"/>
+        <location filename="GelatinPlugin.ui" line="305"/>
         <source>Exposure Control:</source>
         <translation>Controllo esposizione:</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="478"/>
+        <location filename="GelatinPlugin.ui" line="514"/>
         <source>Film</source>
         <translation>Pellicola</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="490"/>
+        <location filename="GelatinPlugin.ui" line="526"/>
         <source>Color Control:</source>
         <translation>Controllo colore:</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="517"/>
+        <location filename="GelatinPlugin.ui" line="553"/>
         <source>Color</source>
         <translation>Colore</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="533"/>
+        <location filename="GelatinPlugin.ui" line="569"/>
         <source>Tint</source>
         <translation>Sfumatura</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="630"/>
+        <location filename="GelatinPlugin.ui" line="666"/>
         <source>Bleed Through</source>
         <translation>Smarginatura</translation>
     </message>
     <message>
-        <location filename="GelatinPlugin.ui" line="643"/>
+        <location filename="GelatinPlugin.ui" line="679"/>
         <source>About...</source>
         <translation>Informazioni su...</translation>
     </message>
