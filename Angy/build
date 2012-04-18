@@ -1,0 +1,4 @@
+../lib/buildLinux.sh
+cp libAngy.so '/home/spoilerhead/.AfterShotPro/Plugins/Angy.afplugin/lib'
+cp AngyPlugin.ui '/home/spoilerhead/.AfterShotPro/Plugins/Angy.afplugin/ui'
+
