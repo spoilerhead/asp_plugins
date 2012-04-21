@@ -40,7 +40,6 @@ bool AngyPlugin::registerFilters()
 {
     AngyFilter *angy = new AngyFilter(m_hub, m_groupId);
     
-    
     if (m_hub->addFilter(angy, PluginHub::Before, QString("Curves"))) {
         qDebug() << "Successfully registered "<<angy->name()<<" filter after Curves";
 	} else {
@@ -55,14 +54,14 @@ bool AngyPlugin::registerFilters()
 bool AngyPlugin::registerOptions()
 {
 	m_hub->addBoolOption  (AngyFilter::Enable   ,   "AngyOn" ,      "Enabled"           , tr("Enable Plugin"), "AngyFilter", false, false, 0);
-	m_hub->addBoolOption  (AngyFilter::Bleach   ,   "AngyBleach" ,  "Bleach"        , tr(""), "AngyFilter", false, false, 0);
+	m_hub->addBoolOption  (AngyFilter::Bleach   ,   "AngyBleach" ,  "Bleach"            , tr("Bleach Bypass"), "AngyFilter", false, false, 0);
 	
-	m_hub->addIntOption   (AngyFilter::Screen   ,   "AngyOpa" ,     ""           , tr(""), "AngyFilter", 80, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Total    ,   "AngyStrength", ""           , tr(""), "AngyFilter", 100, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Flatten  ,   "AngyEdge" ,    ""           , tr(""), "AngyFilter", 0, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Brightness,  "AngyBrightness",""           , tr(""), "AngyFilter", 0, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Recovery ,   "AngyRecovery", ""           , tr(""), "AngyFilter", 0, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Degamma  ,   "AngyDegamma",  ""           , tr(""), "AngyFilter", 100, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Screen   ,   "AngyOpa" ,     "Screen"            , tr("Screen effect"), "AngyFilter", 80, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Total    ,   "AngyStrength", "Total"             , tr("Total Effect Strength"), "AngyFilter", 100, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Flatten  ,   "AngyEdge" ,    "Flatten"           , tr("Flattening effect, reduces contrast"), "AngyFilter", 0, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Brightness,  "AngyBrightness","Brightness"       , tr("Brightness"), "AngyFilter", 0, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Recovery ,   "AngyRecovery", "Regovery"          , tr("Recovers shadows and highlights"), "AngyFilter", 0, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Degamma  ,   "AngyDegamma",  "Degamma"           , tr("Modifies working space gamma value"), "AngyFilter", 100, 0, 0);
 
 	return true;
 }
@@ -125,23 +124,18 @@ void AngyPlugin::handleControlChange(const QString &optionName, int groupId, int
     //bool okay;
     
     //qDebug()<<"handlecontrolchange";
-    // USM settings changes   
-/*	if(
-	    changes.contains(AngyFilter::HH, m_groupId)
-	  ||changes.contains(AngyFilter::SH, m_groupId)
-	  ||changes.contains(AngyFilter::HS, m_groupId)
+	if(
+	    changes.contains(AngyFilter::Bleach, m_groupId)
+	  ||changes.contains(AngyFilter::Screen, m_groupId)
+	  ||changes.contains(AngyFilter::Total, m_groupId)
 	  ||changes.contains(AngyFilter::SS, m_groupId)
-	  ||changes.contains(AngyFilter::Cont, m_groupId)
-	  ||changes.contains(AngyFilter::Mid, m_groupId)
-	  ||changes.contains(AngyFilter::Mix, m_groupId)
-	  ||changes.contains(AngyFilter::BaseH, m_groupId)
-	  ||changes.contains(AngyFilter::BaseS, m_groupId)
-	  ||changes.contains(AngyFilter::BaseL, m_groupId)
-	){
+	  ||changes.contains(AngyFilter::Flatten, m_groupId)
+	  ||changes.contains(AngyFilter::Brightness, m_groupId)
+	  ||changes.contains(AngyFilter::Degamma, m_groupId)
+	) {
         changes.setBool(AngyFilter::Enable, m_groupId, true);
 	}
-	*/
-	
+
 }
 
 //========================================================================================================
