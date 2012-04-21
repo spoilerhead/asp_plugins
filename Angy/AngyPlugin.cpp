@@ -16,6 +16,13 @@
 
 #define PLUGIN_NAME_HR "Angy"
 
+#define DEFAULT_BLEACH false
+#define DEFAULT_SCREEN 80
+#define DEFAULT_TOTAL 100
+#define DEFAULT_FLATTEN 0
+#define DEFAULT_BRIGHTNESS 0
+#define DEFAULT_RECOVERY 0
+#define DEFAULT_DEGAMMA 100
 
 extern "C" BIBBLE_API B5Plugin *b5plugin() { return new AngyPlugin; }
 
@@ -54,14 +61,14 @@ bool AngyPlugin::registerFilters()
 bool AngyPlugin::registerOptions()
 {
 	m_hub->addBoolOption  (AngyFilter::Enable   ,   "AngyOn" ,      "Enabled"           , tr("Enable Plugin"), "AngyFilter", false, false, 0);
-	m_hub->addBoolOption  (AngyFilter::Bleach   ,   "AngyBleach" ,  "Bleach"            , tr("Bleach Bypass"), "AngyFilter", false, false, 0);
+	m_hub->addBoolOption  (AngyFilter::Bleach   ,   "AngyBleach" ,  "Bleach"            , tr("Bleach Bypass"), "AngyFilter", DEFAULT_BLEACH, false, 0);
 	
-	m_hub->addIntOption   (AngyFilter::Screen   ,   "AngyOpa" ,     "Screen"            , tr("Screen effect"), "AngyFilter", 80, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Total    ,   "AngyStrength", "Total"             , tr("Total Effect Strength"), "AngyFilter", 100, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Flatten  ,   "AngyEdge" ,    "Flatten"           , tr("Flattening effect, reduces contrast"), "AngyFilter", 0, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Brightness,  "AngyBrightness","Brightness"       , tr("Brightness"), "AngyFilter", 0, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Recovery ,   "AngyRecovery", "Regovery"          , tr("Recovers shadows and highlights"), "AngyFilter", 0, 0, 0);
-	m_hub->addIntOption   (AngyFilter::Degamma  ,   "AngyDegamma",  "Degamma"           , tr("Modifies working space gamma value"), "AngyFilter", 100, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Screen   ,   "AngyOpa" ,     "Screen"            , tr("Screen effect"), "AngyFilter", DEFAULT_SCREEN, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Total    ,   "AngyStrength", "Total"             , tr("Total Effect Strength"), "AngyFilter", DEFAULT_TOTAL, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Flatten  ,   "AngyEdge" ,    "Flatten"           , tr("Flattening effect, reduces contrast"), "AngyFilter", DEFAULT_FLATTEN, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Brightness,  "AngyBrightness","Brightness"       , tr("Brightness"), "AngyFilter", DEFAULT_BRIGHTNESS, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Recovery ,   "AngyRecovery", "Regovery"          , tr("Recovers shadows and highlights"), "AngyFilter", DEFAULT_RECOVERY, 0, 0);
+	m_hub->addIntOption   (AngyFilter::Degamma  ,   "AngyDegamma",  "Degamma"           , tr("Modifies working space gamma value"), "AngyFilter", DEFAULT_DEGAMMA, 0, 0);
 
 	return true;
 }
@@ -96,10 +103,10 @@ void AngyPlugin::toolWidgetCreated(QWidget *uiWidget)
     if(uiWidget == NULL) return; //protection
     
     
-    /*if (QPushButton *rbtn = uiWidget->findChild<QPushButton*>("FatToniReset_btn")) {
+    if (QPushButton *rbtn = uiWidget->findChild<QPushButton*>("AngyReset_btn")) {
 			connect(rbtn, SIGNAL(clicked()), this, SLOT(reset()));
 		}
-*/
+
 }
 
 //========================================================================================================
@@ -128,9 +135,9 @@ void AngyPlugin::handleControlChange(const QString &optionName, int groupId, int
 	    changes.contains(AngyFilter::Bleach, m_groupId)
 	  ||changes.contains(AngyFilter::Screen, m_groupId)
 	  ||changes.contains(AngyFilter::Total, m_groupId)
-	  ||changes.contains(AngyFilter::SS, m_groupId)
 	  ||changes.contains(AngyFilter::Flatten, m_groupId)
 	  ||changes.contains(AngyFilter::Brightness, m_groupId)
+ 	  ||changes.contains(AngyFilter::Recovery, m_groupId)
 	  ||changes.contains(AngyFilter::Degamma, m_groupId)
 	) {
         changes.setBool(AngyFilter::Enable, m_groupId, true);
@@ -146,17 +153,14 @@ void AngyPlugin::handleHotnessChanged(const PluginImageSettings &options)
 }
 
 void AngyPlugin::reset() {
-   /* if (PluginOptionList *options = m_hub->beginSettingsChange("Reset Fat Toni")) {
-		options->setInt(AngyFilter::HH, m_groupId, DEFAULT_HH);
-		options->setInt(AngyFilter::SH, m_groupId, DEFAULT_SH);
-		options->setInt(AngyFilter::HS, m_groupId, DEFAULT_HS);
-		options->setInt(AngyFilter::SS, m_groupId, DEFAULT_SS);
-		options->setInt(AngyFilter::Mid, m_groupId, DEFAULT_MID);
-		options->setInt(AngyFilter::Mix, m_groupId, DEFAULT_MIX);
-		options->setInt(AngyFilter::Cont, m_groupId, DEFAULT_CONT);
-		options->setInt(AngyFilter::BaseH, m_groupId, DEFAULT_BASEH);
-		options->setInt(AngyFilter::BaseS, m_groupId, DEFAULT_BASES);
-		options->setInt(AngyFilter::BaseL, m_groupId, DEFAULT_BASEL);
+    if (PluginOptionList *options = m_hub->beginSettingsChange("Reset Angy")) {
+		options->setInt(AngyFilter::Bleach, m_groupId,      DEFAULT_BLEACH);
+		options->setInt(AngyFilter::Screen, m_groupId,      DEFAULT_SCREEN);
+		options->setInt(AngyFilter::Total, m_groupId,       DEFAULT_TOTAL);
+		options->setInt(AngyFilter::Flatten, m_groupId,     DEFAULT_FLATTEN);
+		options->setInt(AngyFilter::Brightness, m_groupId,  DEFAULT_BRIGHTNESS);
+		options->setInt(AngyFilter::Recovery, m_groupId,    DEFAULT_RECOVERY);
+		options->setInt(AngyFilter::Degamma, m_groupId,     DEFAULT_DEGAMMA);
 		m_hub->endSettingChange();
-	}*/
+	}
 }
