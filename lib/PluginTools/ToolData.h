@@ -10,12 +10,28 @@
 
 #include <QString>
 #include <QList>
+#include <QPair>
+
+class Option {
+public:
+    Option(int id, QString shortName, QString longName, QString hint) {
+        this->id = id;
+        this->shortName = shortName;
+        this->longName = longName;
+        this->hint = hint;
+    }
+    int id;
+    QString shortName;
+    QString longName;
+    QString hint;
+};
 
 class ToolData : public PluginData
 {
 
 public:
-    ToolData(PluginHub *hub);
+    ToolData();
+    ToolData(const ToolData &);
 
     QList<PluginDependency*> prerequisites(const PluginImageSettings &options, const PluginPipeSettings &settings) const;
     Status run(const PluginImageSettings &options, const PluginPipeSettings &settings);
@@ -29,12 +45,11 @@ public:
     QString owner;
     QString group;
 
-    QList<int> enabledIds;
+    QList<int> v1_enabledIds;
 
-    void addEnabledId(int id);
+    QList<Option> enabledIds;
 
-private:
-	PluginHub *m_hub;
+    void addEnabledId(int id, QString shortName = "", QString longName = "", QString hint = "");
 
 };
 
