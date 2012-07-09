@@ -5,13 +5,14 @@ DEPENDPATH += .
 DEFINES += TARGET_VERSION=$$VERSION
 HEADERS += TargetVersion.h
 
+#QT += network
 
 # we are including local header files
 INCLUDEPATH += .
 
 # we are including the ASP SDK headers from various locations where they may be
 DEPENDPATH += ../Plugin ../SDK/Plugin ../SDK ../../SDK/current/Plugin ../lib
-INCLUDEPATH += ../Plugin ../SDK/Plugin ../SDK ../../SDK/current/Plugin ../lib
+INCLUDEPATH += ../Plugin ../SDK/Plugin ../SDK ../../SDK/current/Plugin ../lib ../lib/PluginTools
 
 # include mac build defines only on mac. These are from the SDK in the /common directory and are required for mac compiles - Please include these in your project for mac builds.
 mac {

@@ -8,7 +8,7 @@ include(../lib/fastmathinclude.pri)
 
 
 # Input
-HEADERS += FilterSharpen.h SharpenPlugin.h wavelet.h FilterUSM.h FilterLLorens.h 
+HEADERS += FilterSharpen.h SharpenPlugin.h wavelet.h FilterUSM.h FilterLLorens.h ../lib/PluginTools/ToolData.h
 TRANSLATIONS = SharpenPlugin_de.ts SharpenPlugin_fr.ts SharpenPlugin_it.ts SharpenPlugin_ja.ts SharpenPlugin_nl.ts
 
 FORMS += sph_wavelet_sharpen.ui
@@ -18,5 +18,6 @@ SOURCES += FilterSharpen.cpp wavelet.cpp dePepper.cpp
 SOURCES += FilterLLorens.cpp LlorensSharpen.cpp 
 SOURCES += FilterUSM.cpp ../lib/usm_iir.cpp
 SOURCES += ../lib/convolution.cpp
+SOURCES += ../lib/PluginTools/ToolData.cpp
 
 

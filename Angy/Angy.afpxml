@@ -1,6 +1,6 @@
 <!DOCTYPE PropertyScribe>
 <PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
-    <PluginFileData identifier="sph.angy" website="http://web.student.tuwien.ac.at/~e0326004/asp/" windowsLibFile="" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Angy/libAngyPlugin.so" author="Spoilerhead" minorVersion="0" bugfixVersion="0" name="Angy" majorVersion="1" sdkVersion="8" dataVersion="1">
+    <PluginFileData identifier="sph.angy" website="http://web.student.tuwien.ac.at/~e0326004/asp/" windowsLibFile="" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/Angy/libAngy.so" author="Spoilerhead" minorVersion="0" bugfixVersion="30" name="Angy" majorVersion="1" sdkVersion="8" dataVersion="1">
         <StringList name="uiFiles">
             <li>/home/spoilerhead/code/ASP_Plugins/repo/Angy/AngyPlugin.ui</li>
         </StringList>

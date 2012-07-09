@@ -20,7 +20,7 @@ public:
 	virtual bool registerFilters();
 	virtual bool registerOptions();
 	virtual bool finish();
-	virtual PluginDependency *createDependency(const QString &name);
+	virtual PluginDependency *createDependency(const QString &dname);
     virtual QList<QString> toolFiles();
     virtual QList<QWidget*> toolWidgets();
     virtual void toolWidgetCreated(QWidget *uiWidget);

@@ -94,7 +94,7 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
     
     const bool runsOnLayer = (layerPos != 0);
     #ifdef INSTRUMENTATION
-    qDebug()<<"INFO"<<name()<<": LayerPos: "<<layerPos;
+    qDebug()<<"INFO"<<name()<<": LayerPos: "<<layerPos<<"( Mip: "<<settings.mip()<<"  Coords:"<<tile.x()  <<","<<tile.y()<<")";
     #endif
     
     PluginImage *targetImage;
@@ -232,13 +232,15 @@ void FilterName::runLayer(const ImageSettings &options, const PipeSettings  &set
 	
 	// ==== PROCESS HERE ==============================================================================
 	#ifdef INSTRUMENTATION
-    qDebug()<<"(info) procWidth: "<<bufferWidth<<" procHeight: "<<bufferHeight;
+    qDebug()<<"(info) procWidth: "<<bufferWidth<<" procHeight: "<<bufferHeight<<"( Mip: "<<settings.mip()<<"  Coords:"<<tile.x()  <<","<<tile.y()<<")";
     #endif
 	
 	if((bufferWidth >0) && (bufferHeight>0)) ProcessBuffer(fimg,bufferWidth,bufferHeight,zoomLevel,options,settings,tile,layerOptions,layerPos);
 	else qDebug()<<"negative sized tile! "<<bufferWidth<<"x"<<bufferHeight;
 	//=================================================================================================
-	
+	#ifdef INSTRUMENTATION
+    qDebug()<<"(info) processed ( Mip: "<<settings.mip()<<"  Coords:"<<tile.x()  <<","<<tile.y()<<")";
+    #endif
 	
 	// =============== WRITE DATA to processed tile ============
 	px_i = 0;

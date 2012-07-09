@@ -6,6 +6,8 @@
 #include "PluginHub.h"
 #include "PluginDependency.h"
 
+#include "ToolData.h"
+
 #include <QDebug>
 #include <iostream>
 #include <QSettings>
@@ -116,10 +118,24 @@ bool SharpenPlugin::finish()
 	return true;
 }
 
-PluginDependency *SharpenPlugin::createDependency(const QString &name)
+PluginDependency *SharpenPlugin::createDependency(const QString &dname)
 {
-	Q_UNUSED(name);
-	return NULL;
+    qDebug()<<PLUGIN_NAME_HR<<" Dependency requested";
+    if (dname == "ToolData") {        //For asPluginupdate
+        ToolData *toolData = new ToolData(m_hub);
+        if (toolData) {
+            toolData->owner = this->name();
+            toolData->group = this->group();
+            toolData->ownerId = m_id;
+            toolData->groupId = m_groupId;
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveleton", m_id));
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveletUsmon", m_id));
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveleton", m_id));
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveletLLenable", m_id));
+            return toolData;
+        }
+    }
+   return NULL;
 }
 
 QList<QString> SharpenPlugin::toolFiles()

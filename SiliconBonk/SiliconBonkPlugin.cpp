@@ -13,6 +13,7 @@
 #include <QPushButton>
 #include <QSettings>
 
+#include "ToolData.h"
 
 #define PLUGIN_NAME_HR "SiliconBonk"
 
@@ -99,12 +100,24 @@ bool SiliconBonkPlugin::finish()
 	connect(m_hub, SIGNAL(settingsChanged(const PluginImageSettings &, const PluginImageSettings &, int)), this, SLOT(handleSettingsChange(const PluginImageSettings &, const PluginImageSettings &, int)));
 	connect(m_hub, SIGNAL(controlChanged(const QString &, int, int , const PluginImageSettings &, const PluginOptionList &, PluginOptionList &)), this, SLOT(handleControlChange(const QString &, int, int , const PluginImageSettings &, const PluginOptionList &, PluginOptionList &)));
    	connect(m_hub, SIGNAL(hotnessChanged(const PluginImageSettings &)), this, SLOT(handleHotnessChanged(const PluginImageSettings &)));
+
 	return true;
 }
 
-PluginDependency *SiliconBonkPlugin::createDependency(const QString &name)
+PluginDependency *SiliconBonkPlugin::createDependency(const QString &dname)
 {
-	Q_UNUSED(name);
+    qDebug()<<PLUGIN_NAME_HR<<" Dependency requested";
+	if (dname == "ToolData") {        //For asPluginupdate
+        ToolData *toolData = new ToolData(m_hub);
+        if (toolData) {
+            toolData->owner = this->name();
+            toolData->group = this->group();
+            toolData->ownerId = m_id;
+            toolData->groupId = m_groupId;
+            toolData->addEnabledId(m_hub->optionIdForName("Enabled", m_id));
+            return toolData;
+        }
+    }
 	return NULL;
 }
 
@@ -197,3 +210,5 @@ void SiliconBonkPlugin::reset() {
 		m_hub->endSettingChange();
 	}
 }
+
+
