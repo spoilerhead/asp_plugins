@@ -1,0 +1,3 @@
+
+lupdate AlicePlugin.pro
+lrelease AlicePlugin.pro

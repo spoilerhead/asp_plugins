@@ -1,0 +1,4 @@
+../lib/buildLinux.sh
+cp libAlice.so '/home/spoilerhead/.AfterShotPro/Plugins/aLiCE.afplugin/lib'
+cp alice.ui '/home/spoilerhead/.AfterShotPro/Plugins/aLiCE.afplugin/ui'
+
