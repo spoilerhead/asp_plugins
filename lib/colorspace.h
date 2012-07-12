@@ -756,13 +756,13 @@ COLORSPACE_FASTLOCAL void rgb2lab (float *r, float *g, float *b)
       *b = (24389.f * *b / 27.0f + 16.f) / 116.0f;
     }
 
-    //ll = 116.f * *g - 16.f;
+    ll = 116.f * *g - 16.f;
     
-    if (*g > 0.008856f) {
+    /*if (*g > 0.008856f) {
             ll = (116.f * *g) - 16.f;
         } else {
             ll = 903.3f * *g;
-        }
+        }*/
     
     aa = 500.f * (*r - *g);
     bb = 200.f * (*g - *b);

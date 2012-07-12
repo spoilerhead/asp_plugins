@@ -122,16 +122,16 @@ PluginDependency *SharpenPlugin::createDependency(const QString &dname)
 {
     qDebug()<<PLUGIN_NAME_HR<<" Dependency requested";
     if (dname == "ToolData") {        //For asPluginupdate
-        ToolData *toolData = new ToolData(m_hub);
+        ToolData *toolData = new ToolData();
         if (toolData) {
             toolData->owner = this->name();
             toolData->group = this->group();
             toolData->ownerId = m_id;
             toolData->groupId = m_groupId;
-            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveleton", m_id));
-            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveletUsmon", m_id));
-            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveleton", m_id));
-            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveletLLenable", m_id));
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveleton", m_id),"WS1","Sharpen 1");
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveletUsmon", m_id),"USM","USM");
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveleton2", m_id),"WS2","Sharpen 2");
+            toolData->addEnabledId(m_hub->optionIdForName("bSphWaveletLLenable", m_id),"Grad","Gradient Sharpen");
             return toolData;
         }
     }
