@@ -160,7 +160,7 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
             memcpy(layers[i+1],layers[i],width*height*sizeof(pixel));   //copy lower pyramid level
             USM_IIR_stacked(layers[i+1],width,height,radius[i+1]*zoomLevel,kernelsize);
         }
-       
+     
        
         
         #ifdef PADLIMIT
@@ -183,9 +183,10 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
           
           
             pixel sum = 0.f;
-            for(int lay = 0;lay<ActiveLayers;lay++) {
-                sum += layers[lay][i]*coeff[lay];
+            for(int lay = 0;lay<(ActiveLayers-1);lay++) {
+                sum += layers[lay][i]*(coeff[lay]);
             }
+            sum += ((layers[ActiveLayers-1][i]-0.5f)*(coeff[ActiveLayers-1]))+0.5f;       //residual isn't +/- 0
             
             pixel org = fimg[channel][i];       //original image
             pixel luma = layers[ActiveLayers-1][i]+layers[ActiveLayers-2][i];   //use residual
@@ -193,6 +194,7 @@ void FilterName::ProcessBuffer(pixel *fimg[3],int width,int height,float zoomLev
             
             fimg[channel][i] = clip(BLEND(sum,org,blendlevel),0.0f,1.0f); //USM step
         }
+
 
         
        
