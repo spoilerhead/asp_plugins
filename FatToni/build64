@@ -1,0 +1,4 @@
+../lib/buildLinux64.sh
+cp libFatToni.so '/home/spoilerhead/.AfterShotPro2/Plugins (64-bit)/FatToni.afplugin/lib'
+cp FatToniPlugin.ui '/home/spoilerhead/.AfterShotPro2/Plugins (64-bit)/FatToni.afplugin/ui'
+

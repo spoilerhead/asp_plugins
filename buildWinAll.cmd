@@ -1,5 +1,8 @@
 call "C:\Program Files\Microsoft Visual Studio 9.0\VC\vcvarsall.bat" x86
-cd FatToni
+cd aLiCE
+call buildwin
+msbuild /t:Rebuild /p:Configuration=Release
+cd ..\FatToni
 call buildwin
 msbuild /t:Rebuild /p:Configuration=Release
 cd ..\Gelatin

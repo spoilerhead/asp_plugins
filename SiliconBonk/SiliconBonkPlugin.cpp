@@ -106,7 +106,7 @@ bool SiliconBonkPlugin::finish()
 
 PluginDependency *SiliconBonkPlugin::createDependency(const QString &dname)
 {
-    qDebug()<<PLUGIN_NAME_HR<<" Dependency requested";
+/*    qDebug()<<PLUGIN_NAME_HR<<" Dependency requested";
 	if (dname == "ToolData") {        //For asPluginupdate
         ToolData *toolData = new ToolData(m_hub);
         if (toolData) {
@@ -118,6 +118,7 @@ PluginDependency *SiliconBonkPlugin::createDependency(const QString &dname)
             return toolData;
         }
     }
+    */ //disabled until tooldata problems solved
 	return NULL;
 }
 

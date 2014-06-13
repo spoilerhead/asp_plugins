@@ -1,1 +1,1 @@
-qmake.exe -o SharpenPlugin.vcproj -t vclib SharpenPlugin.pro
+qmake.exe -o AlicePlugin.vcproj -t vclib AlicePlugin.pro

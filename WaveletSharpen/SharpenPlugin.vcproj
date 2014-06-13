@@ -2,7 +2,7 @@
 <VisualStudioProject
 	ProjectType="Visual C++"
 	Version="9,00"
-	Name="SharpenPlugin"
+	Name="Wavelet"
 	ProjectGUID="{71746EA8-7D54-3785-8044-55713FFACA4F}"
 	Keyword="Qt4VSv1.0">
 	<Platforms>
@@ -19,7 +19,7 @@
 			UseOfMfc="0">
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot;,&quot;.&quot;,&quot;..\..\SDK\current\Plugin&quot;,&quot;..\lib&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot;,&quot;builddir\objects\debug\moc&quot;,&quot;builddir\objects\debug\uih&quot;,c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default"
+				AdditionalIncludeDirectories="&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot;,&quot;.&quot;,&quot;..\Plugin&quot;,&quot;..\SDK\Plugin&quot;,&quot;..\SDK&quot;,&quot;..\..\SDK\current\Plugin&quot;,&quot;..\lib&quot;,&quot;..\lib\PluginTools&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot;,&quot;builddir\objects\debug\moc&quot;,&quot;builddir\objects\debug\uih&quot;,c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default"
 				AdditionalOptions="-Zm200 -w34100 -w34189"
 				AssemblerListingLocation="builddir\objects\debug\obj\"
 				BufferSecurityCheck="false"
@@ -32,7 +32,7 @@
 				GeneratePreprocessedFile="0"
 				ObjectFile="builddir\objects\debug\obj\"
 				Optimization ="4"
-				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,TARGET_VERSION=0.1,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT"
 				ProgramDataBaseFileName=".\"
 				RuntimeLibrary="3"
 				RuntimeTypeInfo="true"
@@ -48,7 +48,7 @@
 				GenerateDebugInformation="true"
 				IgnoreImportLibrary="true"
 				LinkTimeCodeGeneration="0"
-				OutputFile="debug\SharpenPlugin0.dll"
+				OutputFile="debug\Wavelet0.dll"
 				ProgramDatabaseFile=""
 				SubSystem="0"
 				SuppressStartupBanner="true"
@@ -66,7 +66,7 @@
 				Name="VCPreLinkEventTool" />
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
+				PreprocessorDefinitions="_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,TARGET_VERSION=0.1,QT_DLL,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,_DEBUG" />
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
@@ -77,7 +77,7 @@
 			UseOfMfc="0">
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot;,&quot;.&quot;,&quot;..\..\SDK\current\Plugin&quot;,&quot;..\lib&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot;,&quot;builddir\objects\release\moc&quot;,&quot;builddir\objects\release\uih&quot;,c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default"
+				AdditionalIncludeDirectories="&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot;,&quot;.&quot;,&quot;..\Plugin&quot;,&quot;..\SDK\Plugin&quot;,&quot;..\SDK&quot;,&quot;..\..\SDK\current\Plugin&quot;,&quot;..\lib&quot;,&quot;..\lib\PluginTools&quot;,&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot;,&quot;builddir\objects\release\moc&quot;,&quot;builddir\objects\release\uih&quot;,c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default"
 				AdditionalOptions="-Zm200 -w34100 -w34189"
 				AssemblerListingLocation="builddir\objects\release\obj\"
 				BufferSecurityCheck="false"
@@ -90,7 +90,7 @@
 				GeneratePreprocessedFile="0"
 				ObjectFile="builddir\objects\release\obj\"
 				Optimization ="2"
-				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,TARGET_VERSION=0.1,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT,NDEBUG"
 				ProgramDataBaseFileName=".\"
 				RuntimeLibrary="2"
 				RuntimeTypeInfo="true"
@@ -107,7 +107,7 @@
 				IgnoreImportLibrary="true"
 				LinkIncremental="1"
 				LinkTimeCodeGeneration="0"
-				OutputFile="release\SharpenPlugin0.dll"
+				OutputFile="release\Wavelet0.dll"
 				ProgramDatabaseFile=""
 				SubSystem="0"
 				SuppressStartupBanner="true"
@@ -125,7 +125,7 @@
 				Name="VCPreLinkEventTool" />
 			<Tool
 				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
+				PreprocessorDefinitions="QT_NO_DEBUG,NDEBUG,_WINDOWS,UNICODE,WIN32,QT_LARGEFILE_SUPPORT,TARGET_VERSION=0.1,QT_DLL,QT_NO_DEBUG,QT_GUI_LIB,QT_CORE_LIB,QT_HAVE_MMX,QT_HAVE_3DNOW,QT_HAVE_SSE,QT_HAVE_MMXEXT,QT_HAVE_SSE2,QT_THREAD_SUPPORT" />
 		</Configuration>
 	</Configurations>
 	<Files>
@@ -143,6 +143,8 @@
 				RelativePath="LlorensSharpen.cpp" />
 			<File
 				RelativePath="SharpenPlugin.cpp" />
+			<File
+				RelativePath="..\lib\PluginTools\ToolData.cpp" />
 			<File
 				RelativePath="..\lib\convolution.cpp" />
 			<File
@@ -171,7 +173,7 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						AdditionalDependencies="C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\moc.exe;SharpenPlugin.h"
-						CommandLine="C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot; -I&quot;.&quot; -I&quot;..\..\SDK\current\Plugin&quot; -I&quot;..\lib&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot; -I&quot;builddir\objects\debug\moc&quot; -I&quot;builddir\objects\debug\uih&quot; -Ic:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default -D_MSC_VER=1500 -DWIN32 SharpenPlugin.h -o builddir\objects\debug\moc\moc_SharpenPlugin.cpp"
+						CommandLine="C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DTARGET_VERSION=0.1 -DQT_DLL -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot; -I&quot;.&quot; -I&quot;..\Plugin&quot; -I&quot;..\SDK\Plugin&quot; -I&quot;..\SDK&quot; -I&quot;..\..\SDK\current\Plugin&quot; -I&quot;..\lib&quot; -I&quot;..\lib\PluginTools&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot; -I&quot;builddir\objects\debug\moc&quot; -I&quot;builddir\objects\debug\uih&quot; -Ic:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default -D_MSC_VER=1500 -DWIN32 SharpenPlugin.h -o builddir\objects\debug\moc\moc_SharpenPlugin.cpp"
 						Description="MOC SharpenPlugin.h"
 						Outputs="builddir\objects\debug\moc\moc_SharpenPlugin.cpp"
 						Path="c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin" />
@@ -181,12 +183,16 @@
 					<Tool
 						Name="VCCustomBuildTool"
 						AdditionalDependencies="C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\moc.exe;SharpenPlugin.h"
-						CommandLine="C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot; -I&quot;.&quot; -I&quot;..\..\SDK\current\Plugin&quot; -I&quot;..\lib&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot; -I&quot;builddir\objects\release\moc&quot; -I&quot;builddir\objects\release\uih&quot; -Ic:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default -D_MSC_VER=1500 -DWIN32 SharpenPlugin.h -o builddir\objects\release\moc\moc_SharpenPlugin.cpp"
+						CommandLine="C:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin\moc.exe  -DUNICODE -DWIN32 -DQT_LARGEFILE_SUPPORT -DTARGET_VERSION=0.1 -DQT_DLL -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtCore&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\QtGui&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include&quot; -I&quot;.&quot; -I&quot;..\Plugin&quot; -I&quot;..\SDK\Plugin&quot; -I&quot;..\SDK&quot; -I&quot;..\..\SDK\current\Plugin&quot; -I&quot;..\lib&quot; -I&quot;..\lib\PluginTools&quot; -I&quot;c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\include\ActiveQt&quot; -I&quot;builddir\objects\release\moc&quot; -I&quot;builddir\objects\release\uih&quot; -Ic:\QtSDK\Desktop\Qt\4.7.4\msvc2008\mkspecs\default -D_MSC_VER=1500 -DWIN32 SharpenPlugin.h -o builddir\objects\release\moc\moc_SharpenPlugin.cpp"
 						Description="MOC SharpenPlugin.h"
 						Outputs="builddir\objects\release\moc\moc_SharpenPlugin.cpp"
 						Path="c:\QtSDK\Desktop\Qt\4.7.4\msvc2008\bin" />
 				</FileConfiguration>
 			</File>
+			<File
+				RelativePath="..\lib\TargetVersion.h" />
+			<File
+				RelativePath="..\lib\PluginTools\ToolData.h" />
 			<File
 				RelativePath="wavelet.h" />
 		</Filter>
@@ -195,13 +201,13 @@
 			Filter="cpp;c;cxx;moc;h;def;odl;idl;res;"
 			UniqueIdentifier="{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}">
 			<File
-				RelativePath="builddir\objects\debug\obj\SharpenPlugin_resource.res">
+				RelativePath="builddir\objects\debug\obj\Wavelet_resource.res">
 				<FileConfiguration
 					Name="Release|Win32"
 					ExcludedFromBuild="true" />
 			</File>
 			<File
-				RelativePath="builddir\objects\release\obj\SharpenPlugin_resource.res">
+				RelativePath="builddir\objects\release\obj\Wavelet_resource.res">
 				<FileConfiguration
 					Name="Debug|Win32"
 					ExcludedFromBuild="true" />
@@ -277,7 +283,7 @@
 			</File>
 		</Filter>
 		<File
-			RelativePath="z:\repo\WaveletSharpen\SharpenPlugin_resource.rc" />
+			RelativePath="z:\repo\WaveletSharpen\Wavelet_resource.rc" />
 	</Files>
 	<Globals>
 	</Globals>

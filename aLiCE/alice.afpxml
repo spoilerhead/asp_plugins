@@ -1,6 +1,6 @@
 <!DOCTYPE PropertyScribe>
 <PropertyScribe xmlns="http://www.bibblelabs.com//PropertyScribe/" version="1">
-    <PluginFileData identifier="sph.alice" website="http://web.student.tuwien.ac.at/~e0326004/asp/" windowsLibFile="" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/aLiCE/libAlice.so" author="Spoilerhead" minorVersion="1" bugfixVersion="1" name="aLiCE" majorVersion="0" sdkVersion="8" dataVersion="1">
+    <PluginFileData identifier="sph.alice" website="http://web.student.tuwien.ac.at/~e0326004/asp/" windowsLibFile="/home/spoilerhead/code/ASP_Plugins/repo/aLiCE/release/Alice0.dll" resourcesPath="" macLibFile="" linuxLibFile="/home/spoilerhead/code/ASP_Plugins/repo/aLiCE/libAlice.so" author="Spoilerhead" minorVersion="1" bugfixVersion="2" name="aLiCE" majorVersion="0" sdkVersion="8" dataVersion="1">
         <StringList name="uiFiles">
             <li>/home/spoilerhead/code/ASP_Plugins/repo/aLiCE/alice.ui</li>
         </StringList>
