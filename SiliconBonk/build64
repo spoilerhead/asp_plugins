@@ -1,0 +1,4 @@
+../lib/buildLinux64.sh
+cp libSiliconBonkPlugin.so '/home/spoilerhead/.AfterShotPro2/Plugins (64-bit)/Silicon Bonk.afplugin/lib'
+cp SiliconBonkPlugin.ui '/home/spoilerhead/.AfterShotPro2/Plugins (64-bit)/Silicon Bonk.afplugin/ui'
+

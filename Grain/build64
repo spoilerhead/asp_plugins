@@ -1,0 +1,3 @@
+../lib/buildLinux64.sh
+cp libGrain.so '/home/spoilerhead/.AfterShotPro2/Plugins (64-bit)/Grain.afplugin/lib/libGrain.so'
+cp sph_grain.ui '/home/spoilerhead/.AfterShotPro2/Plugins (64-bit)/Grain.afplugin/ui'
