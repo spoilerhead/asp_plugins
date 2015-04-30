@@ -2,6 +2,8 @@
  * by Dieter Steiner <spoilerhead@gmail.com>
  * (C) 2010
  * licensed: GPL v2+
+ * or LGPL v2+
+ * your choice
  */
  
 #ifndef _COLORSPACE_H

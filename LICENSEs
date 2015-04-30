@@ -1,0 +1,22 @@
+Production quality plugins:
+===========================
+FatToni: GPLv2+ or LGPLv2+
+Grain: GPLv2+
+Silicon Bonk : GPLv2+ or LGPLv2+
+WaveletDenoise: GPLv2+
+WaveletSharpen: GPLv2+
+
+
+
+Non functional / experimental plugins:
+======================================
+aLiCE: GPLv2+
+Angy: GPLv2+
+FatToniMid: GPLv2+ or LGPLv2+
+Gelatin: GPLv2+
+
+Others:
+=======
+lib: various licenses
+lib/PluginTools: unknown (Andreas)
+Resources: CC-BY-SA 4.0 (Austria)

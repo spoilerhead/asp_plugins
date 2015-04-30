@@ -1,7 +1,9 @@
 /*
  * by Dieter Steiner <spoilerhead@gmail.com>
  * (C) 2010-2012
- * licensed: GPL v2+, other licenses  available on request
+ * licensed: GPL v2+,
+ * or LGPL v2+
+ * other licenses  available on request
  */
 
 #include "sphLayerFilter.h"

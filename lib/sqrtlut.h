@@ -3,6 +3,9 @@
 
 /* Precomputed table for float f = sqrt(i/65535.f), for i in [0..65535] (16 bit)
    by Spoilerhead 2012
+   GPLv2+
+   or LGPL v2+
+   your choice
 */
 
 const static float sqrtLUT[65536] = {
